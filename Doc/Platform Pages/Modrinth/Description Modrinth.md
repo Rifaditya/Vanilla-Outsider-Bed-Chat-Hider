@@ -38,8 +38,12 @@
 ### 🎞️ Clear World View
 Hides the chat input background fill, suggestions, and the chat history log completely when toggled. Especially beautiful when paired with **True Sleep**'s time-lapse simulation, allowing you to watch the sky fly by without UI overlays blocking the view!
 
+<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20hiden.webp" alt="Chat Hidden View" width="80%"></p>
+
 ### 💤 Session-Based State
 Tracks your toggle preference in-memory. The preference is maintained during the current game session so you don't have to keep clicking it every night.
+
+<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20shown.webp" alt="Chat Shown View" width="80%"></p>
 
 ### 🛡️ Input Blocker
 Safely intercepts and blocks keyboard typing, scrolling, and clicking on the invisible chat log when the chat is hidden, ensuring that only the standard UI buttons are interactive and `Escape` closes the screen naturally.
