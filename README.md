@@ -4,6 +4,9 @@ Bed Chat Hider is a client-only Fabric mod that adds a simple "Hide Chat" / "Sho
 
 It is part of the **Vanilla Outsider Collection (VO)** of mods.
 
+## Feature Showcase
+Feature Showcase: https://youtu.be/jk0l7DBCTGM
+
 ## Features
 - **Unobstructed View**: Hides the chat input background, log history, and command suggestions when toggled off. Especially beautiful when paired with **True Sleep**'s time-lapse simulation!
 - **Session-Based State**: Automatically tracks your visibility preference in-memory during the current game session.

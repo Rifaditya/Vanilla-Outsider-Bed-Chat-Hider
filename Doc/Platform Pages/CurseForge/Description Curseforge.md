@@ -27,6 +27,14 @@
 
 <hr />
 
+<h2>🎥 Feature Showcase</h2>
+
+<div align="center">
+    <a href="https://youtu.be/jk0l7DBCTGM"><img src="https://img.youtube.com/vi/jk0l7DBCTGM/0.jpg" alt="Showcase Video" width="560"></a>
+</div>
+
+<hr />
+
 <h2>✨ Features</h2>
 
 <h3>🎞️ Clear World View</h3>
