@@ -12,6 +12,7 @@
         "sources": "https://github.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider"
     },
     "license": "GPL-3.0",
+    "icon": "assets/vanilla-outsider-bed-chat-hider/icon.png",
     "environment": "client",
     "entrypoints": {
         "client": [
