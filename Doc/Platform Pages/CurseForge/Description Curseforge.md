@@ -29,6 +29,8 @@
 
 <h2>🎥 Feature Showcase</h2>
 
+<p align="center"><em>(Click the image below to watch the showcase video on YouTube)</em></p>
+
 <div align="center">
     <a href="https://youtu.be/jk0l7DBCTGM"><img src="https://img.youtube.com/vi/jk0l7DBCTGM/0.jpg" alt="Showcase Video" width="560"></a>
 </div>
