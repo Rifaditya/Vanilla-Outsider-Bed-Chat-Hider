@@ -15,5 +15,5 @@ Feature Showcase: https://youtu.be/jk0l7DBCTGM
 ## Requirements
 - Minecraft 26.2+
 - Fabric Loader 0.16.9+
-- Fabric API
 - Java 25
+*(This mod has zero runtime dependencies and does NOT require Fabric API)*

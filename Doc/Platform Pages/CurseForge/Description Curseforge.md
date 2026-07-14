@@ -4,7 +4,7 @@
 <!-- <img src="https://files.catbox.moe/example.png" alt="Vanilla Outsider Banner" /> -->
 
 <p align="center">
-    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://img.shields.io/badge/Requires-Fabric_API-blue?style=for-the-badge&logo=fabric" alt="Requires Fabric API"></a>
+    <img src="https://img.shields.io/badge/Zero_Dependencies-Standalone-red?style=for-the-badge" alt="Zero Dependencies">
     <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java" alt="Java">
     <img src="https://img.shields.io/badge/License-GPLv3-green?style=for-the-badge" alt="License">
     <img src="https://img.shields.io/badge/Minecraft-26.2+-brightgreen?style=for-the-badge" alt="Minecraft 26.2+">
@@ -21,7 +21,7 @@
 <hr />
 
 <blockquote>
-    <strong>Collection Notice:</strong> Unlike other mods in the Vanilla Outsider Collection (such as <em>True Sleep</em>), Bed Chat Hider is 100% client-only and requires zero configuration files or GameRules.
+    <strong>Collection Notice:</strong> Unlike other mods in the Vanilla Outsider Collection (such as <em>True Sleep</em>), Bed Chat Hider is 100% client-only, requires zero configuration files or GameRules, and has <strong>zero runtime dependencies</strong> (does NOT require Fabric API)!
     Please note that for other VO mods, the global configuration file only defines default values for newly generated worlds, and settings for existing worlds must be changed in-game via <code>/gamerule</code> or the GameRules edit GUI screen.
 </blockquote>
 
