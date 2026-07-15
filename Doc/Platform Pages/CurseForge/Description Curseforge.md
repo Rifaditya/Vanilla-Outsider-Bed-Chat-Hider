@@ -45,7 +45,7 @@
 <p>Hides the chat input background fill, suggestions, and the chat history log completely when toggled.</p>
 
 <h4>With True Sleep Mod (Accelerated Time-Lapse View)</h4>
-<p>When paired with the <strong>True Sleep</strong> mod, the sleep vignette is removed, allowing you to watch the sky fly by without UI overlays blocking the view!</p>
+<p>When paired with the <strong><a href="https://www.curseforge.com/minecraft/mc-mods/vo-true-sleep">True Sleep</a></strong> mod, the sleep vignette is removed, allowing you to watch the sky fly by without UI overlays blocking the view!</p>
 
 <ul>
     <li><strong>Chat Hidden (True Sleep)</strong>:</li>

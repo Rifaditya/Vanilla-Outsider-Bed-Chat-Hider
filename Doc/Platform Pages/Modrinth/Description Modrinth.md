@@ -41,7 +41,7 @@
 Hides the chat input background fill, suggestions, and the chat history log completely when toggled.
 
 #### With True Sleep Mod (Accelerated Time-Lapse View)
-When paired with the **True Sleep** mod, the sleep vignette is removed, allowing you to watch the sky fly by without UI overlays blocking the view!
+When paired with the **[True Sleep](https://modrinth.com/mod/vanilla-outsider-true-sleep)** mod, the sleep vignette is removed, allowing you to watch the sky fly by without UI overlays blocking the view!
 
 * **Chat Hidden (True Sleep)**:
 <p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20hiden.webp" alt="Chat Hidden with True Sleep" width="80%"></p>
