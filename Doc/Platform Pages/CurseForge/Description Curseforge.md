@@ -33,6 +33,8 @@
 
 <div align="center">
     <a href="https://youtu.be/jk0l7DBCTGM"><img src="https://img.youtube.com/vi/jk0l7DBCTGM/0.jpg" alt="Showcase Video" width="560"></a>
+    <br />
+    <em>Disclaimer: The showcase video above was recorded with the <strong>True Sleep</strong> mod installed.</em>
 </div>
 
 <hr />
