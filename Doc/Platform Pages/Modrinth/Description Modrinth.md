@@ -36,14 +36,28 @@
 ## ✨ Features
 
 ### 🎞️ Clear World View
-Hides the chat input background fill, suggestions, and the chat history log completely when toggled. Especially beautiful when paired with **True Sleep**'s time-lapse simulation, allowing you to watch the sky fly by without UI overlays blocking the view!
+Hides the chat input background fill, suggestions, and the chat history log completely when toggled.
 
-<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20hiden.webp" alt="Chat Hidden View" width="80%"></p>
+#### With True Sleep Mod (Accelerated Time-Lapse View)
+When paired with the **True Sleep** mod, the sleep vignette is removed, allowing you to watch the sky fly by without UI overlays blocking the view!
+
+* **Chat Hidden (True Sleep)**:
+<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20hiden.webp" alt="Chat Hidden with True Sleep" width="80%"></p>
+
+* **Chat Shown (True Sleep)**:
+<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20shown.webp" alt="Chat Shown with True Sleep" width="80%"></p>
+
+#### Without True Sleep Mod (Vanilla Dark Sleep Overlay)
+Without the True Sleep mod, the vanilla black vignette sleep screen is still present, but the chat overlay is hidden.
+
+* **Chat Hidden (Vanilla)**:
+<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/chat%20hidden%20without%20true%20sleep%20mod.webp" alt="Chat Hidden without True Sleep" width="80%"></p>
+
+* **Chat Shown (Vanilla)**:
+<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/chat%20shown%20without%20true%20sleep%20mod.webp" alt="Chat Shown without True Sleep" width="80%"></p>
 
 ### 💤 Session-Based State
 Tracks your toggle preference in-memory. The preference is maintained during the current game session so you don't have to keep clicking it every night.
-
-<p align="center"><img src="https://raw.githubusercontent.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/main/Doc/Images/Chat%20shown.webp" alt="Chat Shown View" width="80%"></p>
 
 ### 🛡️ Input Blocker
 Safely intercepts and blocks keyboard typing, scrolling, and clicking on the invisible chat log when the chat is hidden, ensuring that only the standard UI buttons are interactive and `Escape` closes the screen naturally.
