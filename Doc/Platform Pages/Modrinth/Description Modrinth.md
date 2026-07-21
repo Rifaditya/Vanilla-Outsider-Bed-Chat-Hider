@@ -13,7 +13,7 @@
 
 # 🛌 Vanilla Outsider: Bed Chat Hider
 
-**No Backports:** This mod targets **Minecraft 26.2+** only. Older versions are unsupported.
+**Active Version Policy:** I build **1 JAR for 1 Version**. I only update and maintain the latest active Minecraft version (e.g. when 26.3 is released, 26.2 is retired). No backports or legacy version maintenance. Please do not ask.
 
 **Vanilla Outsider: Bed Chat Hider** is a client-only Fabric mod that adds a simple "Hide Chat" / "Show Chat" toggle button next to the "Leave Bed" button while sleeping.
 
