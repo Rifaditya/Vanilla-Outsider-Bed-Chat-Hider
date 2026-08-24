@@ -5,7 +5,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Zero_Dependencies-Standalone-red?style=for-the-badge" alt="Zero Dependencies">
-    <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java" alt="Java">
+    <img src="https://img.shields.io/badge/Language-Java_25-orange?style=for-the-badge&logo=java" alt="Java 25">
     <img src="https://img.shields.io/badge/License-GPLv3-green?style=for-the-badge" alt="License">
     <img src="https://img.shields.io/badge/Minecraft-26.2+-brightgreen?style=for-the-badge" alt="Minecraft 26.2+">
 </p>
@@ -14,7 +14,7 @@
 
 <h1>🛌 Vanilla Outsider: Bed Chat Hider</h1>
 
-<p><strong>No Backports:</strong> This mod targets <strong>Minecraft 26.2+</strong> only. Older versions are unsupported.</p>
+<p><strong>Active Version Policy:</strong> I build <strong>1 JAR for 1 Version</strong>. I only update and maintain the latest active Minecraft version (e.g. when 26.3 is released, 26.2 is retired). No backports or legacy version maintenance. Please do not ask.</p>
 
 <p><strong>Vanilla Outsider: Bed Chat Hider</strong> is a client-only Fabric mod that adds a simple "Hide Chat" / "Show Chat" toggle button next to the "Leave Bed" button while sleeping.</p>
 
@@ -75,6 +75,9 @@
 
 <h3>🛡️ Input Blocker</h3>
 <p>Safely intercepts and blocks keyboard typing, scrolling, and clicking on the invisible chat log when the chat is hidden, ensuring that only the standard UI buttons are interactive and <code>Escape</code> closes the screen naturally.</p>
+
+<h3>🛡️ Zero Dependencies & Startup Protection</h3>
+<p>Bed Chat Hider has <strong>zero runtime dependencies</strong> (does NOT require Fabric API). Features open-ended <code>26.2+</code> forward compatibility and built-in zero-dependency <strong>ModVersionGuard</strong> pre-release protection that safely halts startup with an explicit banner if loaded on incompatible game versions, preventing world save corruption.</p>
 
 <hr />
 

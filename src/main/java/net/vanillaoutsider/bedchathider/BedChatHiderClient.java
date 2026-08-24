@@ -29,6 +29,7 @@ public class BedChatHiderClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        net.vanillaoutsider.bedchathider.util.ModVersionGuard.checkClass("Bed Chat Hider", "net.minecraft.client.gui.screens.ChatScreen");
         LOGGER.info("Vanilla Outsider: Bed Chat Hider initialized!");
     }
 }

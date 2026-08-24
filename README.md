@@ -11,6 +11,7 @@ Feature Showcase: https://youtu.be/jk0l7DBCTGM
 - **Unobstructed View**: Hides the chat input background, log history, and command suggestions when toggled off. Especially beautiful when paired with **True Sleep**'s time-lapse simulation!
 - **Session-Based State**: Automatically tracks your visibility preference in-memory during the current game session.
 - **Input Blocker**: Safely disables background typing, scroll, and link-clicking while hidden, keeping the screen clean and standard buttons interactive.
+- **Zero Dependencies & Version Guard**: Standalone with zero runtime dependencies. Includes `ModVersionGuard` protection that safely displays an explicit startup banner on incompatible Minecraft drops to prevent world corruption.
 
 ## Requirements
 - Minecraft 26.2+
