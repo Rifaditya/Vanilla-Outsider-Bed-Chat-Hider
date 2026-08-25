@@ -31,13 +31,13 @@ Bed Chat Hider introduces a clean, responsive **"Hide Chat" / "Show Chat"** togg
 
 | Feature Subsystem | Technical Description | Reference Documentation |
 | :--- | :--- | :--- |
-| **🎛️ Bed Screen UI & Layout** | Precision button splitting math ($W/2 - 100$, $98\text{px}$ width, $4\text{px}$ gap) for seamless GUI integration. | [[Bed Screen UI & Layout|Bed-Screen-UI-and-Layout]] |
-| **🛡️ Chat Visibility & Input Blocking** | 4-point input interception (`extractRenderState`, `keyPressed`, `mouseClicked`, `mouseScrolled`) ensuring zero ghost inputs. | [[Chat Visibility & Input Blocking|Chat-Visibility-and-Input-Blocking]] |
-| **🌌 True Sleep Synergy** | Removes chat obstructions during seamless celestial sky time-lapses and cinematic sleeping. | [[True Sleep Synergy|True-Sleep-Synergy]] |
-| **🧠 Session State Persistence** | In-memory toggle state tracking across night cycles with zero disk clutter. | [[Session State Persistence|Session-State-Persistence]] |
-| **⚡ Zero Runtime Dependencies** | 100% standalone mod. Does NOT require Fabric API at runtime. | [[Zero-Dependency Design|Zero-Dependency-Design]] |
-| **🛡️ ModVersionGuard Safety** | Built-in Knot ClassLoader resolution checking for runtime API compatibility to prevent world save corruption. | [[Version Compatibility|Version-Compatibility]] |
-| **🚀 Zero-Tick Overhead** | Event-driven UI rendering with net reduction in GPU text rasterization when hidden. | [[Performance & Rendering|Performance-and-Rendering]] |
+| **🎛️ Bed Screen UI & Layout** | Precision button splitting math ($W/2 - 100$, $98\text{px}$ width, $4\text{px}$ gap) for seamless GUI integration. | [[Bed Screen UI & Layout\|Bed-Screen-UI-and-Layout]] |
+| **🛡️ Chat Visibility & Input Blocking** | 4-point input interception (`extractRenderState`, `keyPressed`, `mouseClicked`, `mouseScrolled`) ensuring zero ghost inputs. | [[Chat Visibility & Input Blocking\|Chat-Visibility-and-Input-Blocking]] |
+| **🌌 True Sleep Synergy** | Removes chat obstructions during seamless celestial sky time-lapses and cinematic sleeping. | [[True Sleep Synergy\|True-Sleep-Synergy]] |
+| **🧠 Session State Persistence** | In-memory toggle state tracking across night cycles with zero disk clutter. | [[Session State Persistence\|Session-State-Persistence]] |
+| **⚡ Zero Runtime Dependencies** | 100% standalone mod. Does NOT require Fabric API at runtime. | [[Zero-Dependency Design\|Zero-Dependency-Design]] |
+| **🛡️ ModVersionGuard Safety** | Built-in Knot ClassLoader resolution checking for runtime API compatibility to prevent world save corruption. | [[Version Compatibility\|Version-Compatibility]] |
+| **🚀 Zero-Tick Overhead** | Event-driven UI rendering with net reduction in GPU text rasterization when hidden. | [[Performance & Rendering\|Performance-and-Rendering]] |
 
 ---
 

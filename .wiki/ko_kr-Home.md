@@ -29,13 +29,13 @@ Vanilla Outsider: Bed Chat Hider 공식 기술 문서에 오신 것을 환영합
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ 침대 화면 UI 및 레이아웃** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[침대 화면 UI 및 레이아웃|ko_kr-Bed-Screen-UI-and-Layout]] |
-| **🛡️ 채팅 가시성 및 입력 차단** | 4-Point Input Interception & Gating | [[채팅 가시성 및 입력 차단|ko_kr-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 True Sleep과의 시너지** | Cinematic Sleep & Celestial Views | [[True Sleep과의 시너지|ko_kr-True-Sleep-Synergy]] |
-| **🧠 세션 상태 유지** | In-Memory Session Toggle State | [[세션 상태 유지|ko_kr-Session-State-Persistence]] |
-| **⚡ 무의존성 아키텍처** | Standalone Execution (No Fabric API needed) | [[무의존성 아키텍처|ko_kr-Zero-Dependency-Design]] |
-| **🛡️ 버전 호환성** | ModVersionGuard & Knot Safety | [[버전 호환성|ko_kr-Version-Compatibility]] |
-| **🚀 성능 및 렌더링 최적화** | Zero-Tick Overhead & GPU Savings | [[성능 및 렌더링 최적화|ko_kr-Performance-and-Rendering]] |
+| **🎛️ 침대 화면 UI 및 레이아웃** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[침대 화면 UI 및 레이아웃\|ko_kr-Bed-Screen-UI-and-Layout]] |
+| **🛡️ 채팅 가시성 및 입력 차단** | 4-Point Input Interception & Gating | [[채팅 가시성 및 입력 차단\|ko_kr-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 True Sleep과의 시너지** | Cinematic Sleep & Celestial Views | [[True Sleep과의 시너지\|ko_kr-True-Sleep-Synergy]] |
+| **🧠 세션 상태 유지** | In-Memory Session Toggle State | [[세션 상태 유지\|ko_kr-Session-State-Persistence]] |
+| **⚡ 무의존성 architecture** | Standalone Execution (No Fabric API needed) | [[무의존성 architecture\|ko_kr-Zero-Dependency-Design]] |
+| **🛡️ 버전 호환성** | ModVersionGuard & Knot Safety | [[버전 호환성\|ko_kr-Version-Compatibility]] |
+| **🚀 성능 및 렌더링 최적화** | Zero-Tick Overhead & GPU Savings | [[성능 및 렌더링 최적화\|ko_kr-Performance-and-Rendering]] |
 
 ---
 
@@ -57,7 +57,7 @@ Vanilla Outsider: Bed Chat Hider 공식 기술 문서에 오신 것을 환영합
 * [[설정 및 무구성 설계|ko_kr-Configuration]]
 * [[개발자 환경 설정 및 빌드|ko_kr-Developer-Setup-and-Building]]
 * [[아키텍처 및 Mixin 분석|ko_kr-Architecture-and-Mixins]]
-* [[무의존성 아키텍처|ko_kr-Zero-Dependency-Design]]
+* [[무의존성 architecture|ko_kr-Zero-Dependency-Design]]
 * [[성능 및 렌더링 최적화|ko_kr-Performance-and-Rendering]]
 * [[문제 해결 및 FAQ|ko_kr-Troubleshooting-and-FAQ]]
 

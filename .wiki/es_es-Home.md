@@ -29,13 +29,13 @@ Bienvenido a la documentación técnica oficial de Bed Chat Hider, desarrollado 
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ Interfaz y Disposición de Cama** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Interfaz y Disposición de Cama|es_es-Bed-Screen-UI-and-Layout]] |
-| **🛡️ Visibilidad del Chat y Bloqueo de Entrada** | 4-Point Input Interception & Gating | [[Visibilidad del Chat y Bloqueo de Entrada|es_es-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 Sinergia con True Sleep** | Cinematic Sleep & Celestial Views | [[Sinergia con True Sleep|es_es-True-Sleep-Synergy]] |
-| **🧠 Persistencia de Estado de Sesión** | In-Memory Session Toggle State | [[Persistencia de Estado de Sesión|es_es-Session-State-Persistence]] |
-| **⚡ Diseño Sin Dependencias** | Standalone Execution (No Fabric API needed) | [[Diseño Sin Dependencias|es_es-Zero-Dependency-Design]] |
-| **🛡️ Compatibilidad de Versiones** | ModVersionGuard & Knot Safety | [[Compatibilidad de Versiones|es_es-Version-Compatibility]] |
-| **🚀 Rendimiento y Optimización de Renderizado** | Zero-Tick Overhead & GPU Savings | [[Rendimiento y Optimización de Renderizado|es_es-Performance-and-Rendering]] |
+| **🎛️ Interfaz y Disposición de Cama** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Interfaz y Disposición de Cama\|es_es-Bed-Screen-UI-and-Layout]] |
+| **🛡️ Visibilidad del Chat y Bloqueo de Entrada** | 4-Point Input Interception & Gating | [[Visibilidad del Chat y Bloqueo de Entrada\|es_es-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 Sinergia con True Sleep** | Cinematic Sleep & Celestial Views | [[Sinergia con True Sleep\|es_es-True-Sleep-Synergy]] |
+| **🧠 Persistencia de Estado de Sesión** | In-Memory Session Toggle State | [[Persistencia de Estado de Sesión\|es_es-Session-State-Persistence]] |
+| **⚡ Diseño Sin Dependencias** | Standalone Execution (No Fabric API needed) | [[Diseño Sin Dependencias\|es_es-Zero-Dependency-Design]] |
+| **🛡️ Compatibilidad de Versiones** | ModVersionGuard & Knot Safety | [[Compatibilidad de Versiones\|es_es-Version-Compatibility]] |
+| **🚀 Rendimiento y Optimización de Renderizado** | Zero-Tick Overhead & GPU Savings | [[Rendimiento y Optimización de Renderizado\|es_es-Performance-and-Rendering]] |
 
 ---
 

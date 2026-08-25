@@ -223,7 +223,7 @@
 * [[설정 및 무구성 설계|ko_kr-Configuration]]
 * [[개발자 환경 설정 및 빌드|ko_kr-Developer-Setup-and-Building]]
 * [[아키텍처 및 Mixin 분석|ko_kr-Architecture-and-Mixins]]
-* [[무의존성 아키텍처|ko_kr-Zero-Dependency-Design]]
+* [[무의존성 architecture|ko_kr-Zero-Dependency-Design]]
 * [[성능 및 렌더링 최적화|ko_kr-Performance-and-Rendering]]
 * [[문제 해결 및 FAQ|ko_kr-Troubleshooting-and-FAQ]]
 </details>

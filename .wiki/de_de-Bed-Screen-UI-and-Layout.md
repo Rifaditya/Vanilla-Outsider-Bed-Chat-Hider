@@ -4,7 +4,7 @@
 | :--- | :--- |
 | **Target Screen Class** | `net.minecraft.client.gui.screens.InBedChatScreen` |
 | **Superclass** | `net.minecraft.client.gui.screens.ChatScreen` |
-| **Mixin Handler** | [`InBedChatScreenMixin.java`](file:///src/main/java/net/vanillaoutsider/bedchathider/mixin/InBedChatScreenMixin.java) |
+| **Mixin Handler** | [`InBedChatScreenMixin.java`](https://github.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/blob/main/src/main/java/net/vanillaoutsider/bedchathider/mixin/InBedChatScreenMixin.java) |
 | **Injection Point** | `@Inject(method = "init", at = @At("TAIL"))` |
 | **Button Width** | $98\text{ px}$ (Left: Leave Bed, Right: Toggle Chat) |
 | **Button Height** | $20\text{ px}$ |

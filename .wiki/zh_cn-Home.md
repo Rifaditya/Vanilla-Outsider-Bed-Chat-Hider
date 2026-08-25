@@ -29,13 +29,13 @@
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ 睡眠界面布局与坐标计算** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[睡眠界面布局与坐标计算|zh_cn-Bed-Screen-UI-and-Layout]] |
-| **🛡️ 聊天可见性与输入拦截** | 4-Point Input Interception & Gating | [[聊天可见性与输入拦截|zh_cn-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 与 True Sleep 的视觉协同** | Cinematic Sleep & Celestial Views | [[与 True Sleep 的视觉协同|zh_cn-True-Sleep-Synergy]] |
-| **🧠 会话状态与内存持久化** | In-Memory Session Toggle State | [[会话状态与内存持久化|zh_cn-Session-State-Persistence]] |
-| **⚡ 零依赖架构设计** | Standalone Execution (No Fabric API needed) | [[零依赖架构设计|zh_cn-Zero-Dependency-Design]] |
-| **🛡️ 版本兼容性与生命周期** | ModVersionGuard & Knot Safety | [[版本兼容性与生命周期|zh_cn-Version-Compatibility]] |
-| **🚀 性能开销与渲染优化** | Zero-Tick Overhead & GPU Savings | [[性能开销与渲染优化|zh_cn-Performance-and-Rendering]] |
+| **🎛️ 睡眠界面布局与坐标计算** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[睡眠界面布局与坐标计算\|zh_cn-Bed-Screen-UI-and-Layout]] |
+| **🛡️ 聊天可见性与输入拦截** | 4-Point Input Interception & Gating | [[聊天可见性与输入拦截\|zh_cn-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 与 True Sleep 的视觉协同** | Cinematic Sleep & Celestial Views | [[与 True Sleep 的视觉协同\|zh_cn-True-Sleep-Synergy]] |
+| **🧠 会话状态与内存持久化** | In-Memory Session Toggle State | [[会话状态与内存持久化\|zh_cn-Session-State-Persistence]] |
+| **⚡ 零依赖架构设计** | Standalone Execution (No Fabric API needed) | [[零依赖架构设计\|zh_cn-Zero-Dependency-Design]] |
+| **🛡️ 版本兼容性与生命周期** | ModVersionGuard & Knot Safety | [[版本兼容性与生命周期\|zh_cn-Version-Compatibility]] |
+| **🚀 性能开销与渲染优化** | Zero-Tick Overhead & GPU Savings | [[性能开销与渲染优化\|zh_cn-Performance-and-Rendering]] |
 
 ---
 

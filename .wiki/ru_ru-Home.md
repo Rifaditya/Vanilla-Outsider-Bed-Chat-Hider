@@ -29,13 +29,13 @@
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ Интерфейс экрана сна** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Интерфейс экрана сна|ru_ru-Bed-Screen-UI-and-Layout]] |
-| **🛡️ Видимость чата и блокировка ввода** | 4-Point Input Interception & Gating | [[Видимость чата и блокировка ввода|ru_ru-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 Синергия с True Sleep** | Cinematic Sleep & Celestial Views | [[Синергия с True Sleep|ru_ru-True-Sleep-Synergy]] |
-| **🧠 Сохранение состояния сессии** | In-Memory Session Toggle State | [[Сохранение состояния сессии|ru_ru-Session-State-Persistence]] |
-| **⚡ Архитектура без зависимостей** | Standalone Execution (No Fabric API needed) | [[Архитектура без зависимостей|ru_ru-Zero-Dependency-Design]] |
-| **🛡️ Совместимость версий** | ModVersionGuard & Knot Safety | [[Совместимость версий|ru_ru-Version-Compatibility]] |
-| **🚀 Производительность и рендеринг** | Zero-Tick Overhead & GPU Savings | [[Производительность и рендеринг|ru_ru-Performance-and-Rendering]] |
+| **🎛️ Интерфейс экрана сна** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Интерфейс экрана сна\|ru_ru-Bed-Screen-UI-and-Layout]] |
+| **🛡️ Видимость чата и блокировка ввода** | 4-Point Input Interception & Gating | [[Видимость чата и блокировка ввода\|ru_ru-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 Синергия с True Sleep** | Cinematic Sleep & Celestial Views | [[Синергия с True Sleep\|ru_ru-True-Sleep-Synergy]] |
+| **🧠 Сохранение состояния сессии** | In-Memory Session Toggle State | [[Сохранение состояния сессии\|ru_ru-Session-State-Persistence]] |
+| **⚡ Архитектура без зависимостей** | Standalone Execution (No Fabric API needed) | [[Архитектура без зависимостей\|ru_ru-Zero-Dependency-Design]] |
+| **🛡️ Совместимость версий** | ModVersionGuard & Knot Safety | [[Совместимость версий\|ru_ru-Version-Compatibility]] |
+| **🚀 Производительность и рендеринг** | Zero-Tick Overhead & GPU Savings | [[Производительность и рендеринг\|ru_ru-Performance-and-Rendering]] |
 
 ---
 

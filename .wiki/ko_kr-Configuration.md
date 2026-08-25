@@ -18,4 +18,4 @@ Bed Chat Hider is built on a **zero-configuration** philosophy:
 
 ---
 
-*Related Pages*: [[홈|ko_kr-Home]] | [[세션 상태 유지|ko_kr-Session-State-Persistence]] | [[무의존성 아키텍처|ko_kr-Zero-Dependency-Design]]
+*Related Pages*: [[홈|ko_kr-Home]] | [[세션 상태 유지|ko_kr-Session-State-Persistence]] | [[무의존성 architecture|ko_kr-Zero-Dependency-Design]]

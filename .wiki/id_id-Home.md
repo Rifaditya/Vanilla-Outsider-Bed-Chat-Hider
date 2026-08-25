@@ -29,13 +29,13 @@ Selamat datang di dokumentasi teknis resmi untuk Bed Chat Hider, dikembangkan de
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ Tata Letak UI Layar Tempat Tidur** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Tata Letak UI Layar Tempat Tidur|id_id-Bed-Screen-UI-and-Layout]] |
-| **🛡️ Visibilitas Obrolan & Pemblokiran Input** | 4-Point Input Interception & Gating | [[Visibilitas Obrolan & Pemblokiran Input|id_id-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 Sinergi dengan True Sleep** | Cinematic Sleep & Celestial Views | [[Sinergi dengan True Sleep|id_id-True-Sleep-Synergy]] |
-| **🧠 Persistensi Status Sesi** | In-Memory Session Toggle State | [[Persistensi Status Sesi|id_id-Session-State-Persistence]] |
-| **⚡ Desain Tanpa Dependensi** | Standalone Execution (No Fabric API needed) | [[Desain Tanpa Dependensi|id_id-Zero-Dependency-Design]] |
-| **🛡️ Kompatibilitas Versi** | ModVersionGuard & Knot Safety | [[Kompatibilitas Versi|id_id-Version-Compatibility]] |
-| **🚀 Performa & Optimasi Render** | Zero-Tick Overhead & GPU Savings | [[Performa & Optimasi Render|id_id-Performance-and-Rendering]] |
+| **🎛️ Tata Letak UI Layar Tempat Tidur** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Tata Letak UI Layar Tempat Tidur\|id_id-Bed-Screen-UI-and-Layout]] |
+| **🛡️ Visibilitas Obrolan & Pemblokiran Input** | 4-Point Input Interception & Gating | [[Visibilitas Obrolan & Pemblokiran Input\|id_id-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 Sinergi dengan True Sleep** | Cinematic Sleep & Celestial Views | [[Sinergi dengan True Sleep\|id_id-True-Sleep-Synergy]] |
+| **🧠 Persistensi Status Sesi** | In-Memory Session Toggle State | [[Persistensi Status Sesi\|id_id-Session-State-Persistence]] |
+| **⚡ Desain Tanpa Dependensi** | Standalone Execution (No Fabric API needed) | [[Desain Tanpa Dependensi\|id_id-Zero-Dependency-Design]] |
+| **🛡️ Kompatibilitas Versi** | ModVersionGuard & Knot Safety | [[Kompatibilitas Versi\|id_id-Version-Compatibility]] |
+| **🚀 Performa & Optimasi Render** | Zero-Tick Overhead & GPU Savings | [[Performa & Optimasi Render\|id_id-Performance-and-Rendering]] |
 
 ---
 

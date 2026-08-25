@@ -29,13 +29,13 @@ Bem-vindo à documentação técnica oficial do Bed Chat Hider, desenvolvido sob
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ Interface da Cama e Layout** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Interface da Cama e Layout|pt_br-Bed-Screen-UI-and-Layout]] |
-| **🛡️ Visibilidade do Chat e Bloqueio de Entrada** | 4-Point Input Interception & Gating | [[Visibilidade do Chat e Bloqueio de Entrada|pt_br-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 Sinergia com True Sleep** | Cinematic Sleep & Celestial Views | [[Sinergia com True Sleep|pt_br-True-Sleep-Synergy]] |
-| **🧠 Persistência de Estado da Sessão** | In-Memory Session Toggle State | [[Persistência de Estado da Sessão|pt_br-Session-State-Persistence]] |
-| **⚡ Design Sem Dependências** | Standalone Execution (No Fabric API needed) | [[Design Sem Dependências|pt_br-Zero-Dependency-Design]] |
-| **🛡️ Compatibilidade de Versões** | ModVersionGuard & Knot Safety | [[Compatibilidade de Versões|pt_br-Version-Compatibility]] |
-| **🚀 Desempenho e Otimização de Renderização** | Zero-Tick Overhead & GPU Savings | [[Desempenho e Otimização de Renderização|pt_br-Performance-and-Rendering]] |
+| **🎛️ Interface da Cama e Layout** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Interface da Cama e Layout\|pt_br-Bed-Screen-UI-and-Layout]] |
+| **🛡️ Visibilidade do Chat e Bloqueio de Entrada** | 4-Point Input Interception & Gating | [[Visibilidade do Chat e Bloqueio de Entrada\|pt_br-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 Sinergia com True Sleep** | Cinematic Sleep & Celestial Views | [[Sinergia com True Sleep\|pt_br-True-Sleep-Synergy]] |
+| **🧠 Persistência de Estado da Sessão** | In-Memory Session Toggle State | [[Persistência de Estado da Sessão\|pt_br-Session-State-Persistence]] |
+| **⚡ Design Sem Dependências** | Standalone Execution (No Fabric API needed) | [[Design Sem Dependências\|pt_br-Zero-Dependency-Design]] |
+| **🛡️ Compatibilidade de Versões** | ModVersionGuard & Knot Safety | [[Compatibilidade de Versões\|pt_br-Version-Compatibility]] |
+| **🚀 Desempenho e Otimização de Renderização** | Zero-Tick Overhead & GPU Savings | [[Desempenho e Otimização de Renderização\|pt_br-Performance-and-Rendering]] |
 
 ---
 

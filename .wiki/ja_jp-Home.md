@@ -29,13 +29,13 @@ Vanilla Outsider: Bed Chat Hider の公式技術ドキュメントへようこ�
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ ベッド画面UIとレイアウト** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[ベッド画面UIとレイアウト|ja_jp-Bed-Screen-UI-and-Layout]] |
-| **🛡️ チャット表示と入力ブロック** | 4-Point Input Interception & Gating | [[チャット表示と入力ブロック|ja_jp-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 True Sleepとの相乗効果** | Cinematic Sleep & Celestial Views | [[True Sleepとの相乗効果|ja_jp-True-Sleep-Synergy]] |
-| **🧠 セッション状態の保持** | In-Memory Session Toggle State | [[セッション状態の保持|ja_jp-Session-State-Persistence]] |
-| **⚡ ゼロ依存アーキテクチャ** | Standalone Execution (No Fabric API needed) | [[ゼロ依存アーキテクチャ|ja_jp-Zero-Dependency-Design]] |
-| **🛡️ バージョン互換性** | ModVersionGuard & Knot Safety | [[バージョン互換性|ja_jp-Version-Compatibility]] |
-| **🚀 パフォーマンスと描画最適化** | Zero-Tick Overhead & GPU Savings | [[パフォーマンスと描画最適化|ja_jp-Performance-and-Rendering]] |
+| **🎛️ ベッド画面UIとレイアウト** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[ベッド画面UIとレイアウト\|ja_jp-Bed-Screen-UI-and-Layout]] |
+| **🛡️ チャット表示と入力ブロック** | 4-Point Input Interception & Gating | [[チャット表示と入力ブロック\|ja_jp-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 True Sleepとの相乗効果** | Cinematic Sleep & Celestial Views | [[True Sleepとの相乗効果\|ja_jp-True-Sleep-Synergy]] |
+| **🧠 セッション状態の保持** | In-Memory Session Toggle State | [[セッション状態の保持\|ja_jp-Session-State-Persistence]] |
+| **⚡ ゼロ依存アーキテクチャ** | Standalone Execution (No Fabric API needed) | [[ゼロ依存アーキテクチャ\|ja_jp-Zero-Dependency-Design]] |
+| **🛡️ バージョン互換性** | ModVersionGuard & Knot Safety | [[バージョン互換性\|ja_jp-Version-Compatibility]] |
+| **🚀 パフォーマンスと描画最適化** | Zero-Tick Overhead & GPU Savings | [[パフォーマンスと描画最適化\|ja_jp-Performance-and-Rendering]] |
 
 ---
 

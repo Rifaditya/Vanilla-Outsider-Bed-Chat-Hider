@@ -3,7 +3,7 @@
 | Parameter | Technical Details |
 | :--- | :--- |
 | **Target Screen Class** | `net.minecraft.client.gui.screens.ChatScreen` |
-| **Mixin Handler** | [`ChatScreenMixin.java`](file:///src/main/java/net/vanillaoutsider/bedchathider/mixin/ChatScreenMixin.java) |
+| **Mixin Handler** | [`ChatScreenMixin.java`](https://github.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/blob/main/src/main/java/net/vanillaoutsider/bedchathider/mixin/ChatScreenMixin.java) |
 | **In-Memory State** | `BedChatHiderClient.hideChat` (`boolean`) |
 | **Interception Targets** | `extractRenderState`, `keyPressed`, `mouseClicked`, `mouseScrolled` |
 | **Focus Gatekeeper** | `bedchathider$updateChatState()` |

@@ -66,4 +66,4 @@ If an incompatible game runtime is detected, execution halts safely with an expl
 
 ---
 
-*Related Pages*: [[홈|ko_kr-Home]] | [[무의존성 아키텍처|ko_kr-Zero-Dependency-Design]] | [[개발자 환경 설정 및 빌드|ko_kr-Developer-Setup-and-Building]]
+*Related Pages*: [[홈|ko_kr-Home]] | [[무의존성 architecture|ko_kr-Zero-Dependency-Design]] | [[개발자 환경 설정 및 빌드|ko_kr-Developer-Setup-and-Building]]

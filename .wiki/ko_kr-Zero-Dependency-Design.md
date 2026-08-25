@@ -1,4 +1,4 @@
-# ⚡ 무의존성 아키텍처
+# ⚡ 무의존성 architecture
 
 | Parameter | Technical Details |
 | :--- | :--- |

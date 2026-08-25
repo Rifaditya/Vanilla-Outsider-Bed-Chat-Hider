@@ -29,13 +29,13 @@ Willkommen in der offiziellen technischen Dokumentation von Bed Chat Hider, entw
 
 | Feature | Description | Link |
 | :--- | :--- | :--- |
-| **🎛️ Bett-Bildschirm UI & Layout** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Bett-Bildschirm UI & Layout|de_de-Bed-Screen-UI-and-Layout]] |
-| **🛡️ Chat-Sichtbarkeit & Eingabeblockierung** | 4-Point Input Interception & Gating | [[Chat-Sichtbarkeit & Eingabeblockierung|de_de-Chat-Visibility-and-Input-Blocking]] |
-| **🌌 Synergie mit True Sleep** | Cinematic Sleep & Celestial Views | [[Synergie mit True Sleep|de_de-True-Sleep-Synergy]] |
-| **🧠 Sitzungszustand-Persistenz** | In-Memory Session Toggle State | [[Sitzungszustand-Persistenz|de_de-Session-State-Persistence]] |
-| **⚡ Null-Abhängigkeiten-Design** | Standalone Execution (No Fabric API needed) | [[Null-Abhängigkeiten-Design|de_de-Zero-Dependency-Design]] |
-| **🛡️ Versionskompatibilität** | ModVersionGuard & Knot Safety | [[Versionskompatibilität|de_de-Version-Compatibility]] |
-| **🚀 Leistung & Rendering-Optimierung** | Zero-Tick Overhead & GPU Savings | [[Leistung & Rendering-Optimierung|de_de-Performance-and-Rendering]] |
+| **🎛️ Bett-Bildschirm UI & Layout** | UI Math ($W/2 - 100$, $98\text{px}$, $4\text{px}$ gap) | [[Bett-Bildschirm UI & Layout\|de_de-Bed-Screen-UI-and-Layout]] |
+| **🛡️ Chat-Sichtbarkeit & Eingabeblockierung** | 4-Point Input Interception & Gating | [[Chat-Sichtbarkeit & Eingabeblockierung\|de_de-Chat-Visibility-and-Input-Blocking]] |
+| **🌌 Synergie mit True Sleep** | Cinematic Sleep & Celestial Views | [[Synergie mit True Sleep\|de_de-True-Sleep-Synergy]] |
+| **🧠 Sitzungszustand-Persistenz** | In-Memory Session Toggle State | [[Sitzungszustand-Persistenz\|de_de-Session-State-Persistence]] |
+| **⚡ Null-Abhängigkeiten-Design** | Standalone Execution (No Fabric API needed) | [[Null-Abhängigkeiten-Design\|de_de-Zero-Dependency-Design]] |
+| **🛡️ Versionskompatibilität** | ModVersionGuard & Knot Safety | [[Versionskompatibilität\|de_de-Version-Compatibility]] |
+| **🚀 Leistung & Rendering-Optimierung** | Zero-Tick Overhead & GPU Savings | [[Leistung & Rendering-Optimierung\|de_de-Performance-and-Rendering]] |
 
 ---
 

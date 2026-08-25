@@ -35,4 +35,4 @@
 
 ---
 
-*Related Pages*: [[홈|ko_kr-Home]] | [[설정 및 무구성 설계|ko_kr-Configuration]] | [[무의존성 아키텍처|ko_kr-Zero-Dependency-Design]]
+*Related Pages*: [[홈|ko_kr-Home]] | [[설정 및 무구성 설계|ko_kr-Configuration]] | [[무의존성 architecture|ko_kr-Zero-Dependency-Design]]
