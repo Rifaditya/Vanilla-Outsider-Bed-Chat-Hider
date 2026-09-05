@@ -8,10 +8,11 @@
         "DasikIgaijin"
     ],
     "contact": {
-        "homepage": "https://github.com/Rifaditya",
-        "sources": "https://github.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider"
+        "homepage": "https://modrinth.com/mod/vo-bed-chat-hider",
+        "sources": "https://github.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider",
+        "issues": "https://github.com/Rifaditya/Vanilla-Outsider-Bed-Chat-Hider/issues"
     },
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "icon": "assets/vanilla-outsider-bed-chat-hider/icon.png",
     "environment": "client",
     "entrypoints": {
@@ -22,8 +23,21 @@
     "mixins": [
         "vanilla-outsider-bed-chat-hider.mixins.json"
     ],
+    "custom": {
+        "modrinth": {
+            "projectId": "UO9ITBNa",
+            "slug": "vo-bed-chat-hider"
+        },
+        "modmenu": {
+            "links": {
+                "modmenu.donate": "https://ko-fi.com/dasikigaijin",
+                "modmenu.kofi": "https://ko-fi.com/dasikigaijin"
+            }
+        }
+    },
     "depends": {
         "fabricloader": ">=0.16.9",
+        "fabric-api": "*",
         "minecraft": ">=26.2-",
         "java": ">=25"
     }
