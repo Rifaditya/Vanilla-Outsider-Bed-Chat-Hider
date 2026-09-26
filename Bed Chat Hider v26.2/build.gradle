@@ -16,6 +16,9 @@ repositories {
     maven { url = "https://maven.terraformersmc.com/releases/" }
     maven { url = "https://maven.shedaniel.me/" }
     mavenCentral()
+    flatDir {
+        dirs 'e:/Minecraft Project/DasikLibrary-Rebuilt/Archive/builds'
+    }
 }
 
 dependencies {
@@ -23,6 +26,11 @@ dependencies {
 
     implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    implementation "net.dasik.social:dasik-library:1.9.2"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.2"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
 }
 
 processResources {
@@ -43,6 +51,7 @@ loom {
 }
 
 java {
+    withSourcesJar()
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
     }
@@ -52,8 +61,85 @@ tasks.withType(JavaCompile).configureEach {
     it.options.release = 25
 }
 
+test {
+    useJUnitPlatform()
+}
+
 jar {
     from("LICENSE") {
         rename { String name -> name + "_" + project.archives_base_name }
+    }
+}
+
+afterEvaluate {
+    def targetJarTask = tasks.findByName('remapJar') ?: tasks.findByName('jar')
+    if (targetJarTask != null) {
+        def archiveTask = tasks.register('archiveReleaseJar') {
+            group = 'build'
+            description = 'Copies release JAR to all 4 deployment locations'
+            dependsOn targetJarTask
+            doLast {
+                def jarFile = targetJarTask.archiveFile.get().asFile
+                if (!jarFile.exists()) {
+                    jarFile = file("build/libs/${project.archives_base_name}-${project.mod_version}.jar")
+                }
+                if (jarFile.exists()) {
+                    // Point 1: Mod Local Archives
+                    def localArchiveDirs = [
+                        file("Archive/builds"),
+                        file("../Archive"),
+                        file("../Archive Jar of all versions/MC 26.2"),
+                        file("../../Archive Jar of all versions/MC 26.2")
+                    ]
+                    localArchiveDirs.each { dir ->
+                        if (!dir.exists()) dir.mkdirs()
+                        copy {
+                            from jarFile
+                            into dir
+                        }
+                        println "[DEPLOY-POINT-1] Copied ${jarFile.name} to: ${dir.canonicalPath}"
+                    }
+
+                    // Point 2: Central Release Hub Archives
+                    File hubDir = new File("E:/Minecraft Project/minecraft-mod-release-hub/archives/Bed Chat Hider")
+                    if (hubDir.exists() || hubDir.parentFile?.exists()) {
+                        hubDir.mkdirs()
+                        copy {
+                            from jarFile
+                            into hubDir
+                        }
+                        println "[DEPLOY-POINT-2] Copied ${jarFile.name} to release hub: ${hubDir.canonicalPath}"
+                    }
+
+                    // Point 3: External Vault Archive
+                    File vaultDir = new File("D:/Minecraft Mod Archive Jars/Bed Chat Hider")
+                    if (vaultDir.exists() || vaultDir.parentFile?.exists()) {
+                        vaultDir.mkdirs()
+                        copy {
+                            from jarFile
+                            into vaultDir
+                        }
+                        println "[DEPLOY-POINT-3] Copied ${jarFile.name} to external vault: ${vaultDir.canonicalPath}"
+                    }
+
+                    // Point 4: Modrinth App Profile mods directory
+                    File profileDir = new File("C:/Users/fmrif/AppData/Roaming/ModrinthApp/profiles/Fabric 26.2 (1)/mods")
+                    if (profileDir.exists()) {
+                        profileDir.listFiles().each { file ->
+                            if (file.name.startsWith(project.archives_base_name) && file.name.endsWith(".jar") && !file.name.equals(jarFile.name)) {
+                                file.delete()
+                                println "[DEPLOY-POINT-4] Purged old version from test profile: ${file.name}"
+                            }
+                        }
+                        copy {
+                            from jarFile
+                            into profileDir
+                        }
+                        println "[DEPLOY-POINT-4] Deployed ${jarFile.name} to test profile: ${profileDir.canonicalPath}"
+                    }
+                }
+            }
+        }
+        build.finalizedBy(archiveTask)
     }
 }

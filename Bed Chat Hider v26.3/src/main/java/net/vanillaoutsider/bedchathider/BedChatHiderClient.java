@@ -2,6 +2,9 @@
 package net.vanillaoutsider.bedchathider;
 
 import net.fabricmc.api.ClientModInitializer;
+import net.dasik.social.api.SocialLinks;
+import net.dasik.social.api.config.DasikSupportHelper;
+import net.dasik.social.util.ModVersionGuard;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +17,7 @@ public class BedChatHiderClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        net.vanillaoutsider.bedchathider.util.ModVersionGuard.checkClass("Bed Chat Hider", "net.minecraft.client.gui.screens.ChatScreen");
-        LOGGER.info("Vanilla Outsider: Bed Chat Hider initialized!");
+        ModVersionGuard.checkClass("Bed Chat Hider", "net.minecraft.client.gui.screens.ChatScreen");
+        LOGGER.info("Vanilla Outsider: Bed Chat Hider 26.3 initialized! Community: {}, Support: {}", SocialLinks.DISCORD_INVITE_URL, DasikSupportHelper.KOFI_URL);
     }
 }

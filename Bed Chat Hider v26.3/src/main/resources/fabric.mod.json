@@ -31,14 +31,16 @@
         "modmenu": {
             "links": {
                 "modmenu.donate": "https://ko-fi.com/dasikigaijin",
-                "modmenu.kofi": "https://ko-fi.com/dasikigaijin"
+                "modmenu.kofi": "https://ko-fi.com/dasikigaijin",
+                "modmenu.discord": "https://discord.gg/EV99bgAFqb"
             }
         }
     },
     "depends": {
-        "fabricloader": ">=0.16.9",
+        "fabricloader": ">=0.19.5",
         "fabric-api": "*",
         "minecraft": ">=26.3-",
+        "dasik-library": ">=1.9.0",
         "java": ">=25"
     }
 }

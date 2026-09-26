@@ -4,6 +4,7 @@ This file tracks which built versions have been manually uploaded to Modrinth/Cu
 
 ## 🚀 Published & Backlog Queue
 
+- [ ] **`1.0.5+26.2`** (2026-09-24) - Dasik Library Integration.
 - [x] **`1.0.4+26.2`** (2026-07-22) - ModVersionGuard Knot ClassLoader Fix.
 - [x] **`1.0.3+26.2`** (2026-07-22) - Forward Compatibility & Version Guard.
 - [x] **`1.0.2-26.2`** (2026-07-14) - Standalone zero-dependency refactor.

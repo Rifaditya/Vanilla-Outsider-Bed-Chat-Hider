@@ -1,3 +1,10 @@
+## [1.0.5+26.2] - 2026-09-24
+
+### Added
+- **Dasik Library Integration**: Powered by Dasik Library 1.9.2+ for unified cross-mod community links, creator support, and centralized runtime safeguards.
+- **Automated Verification Suite**: Added JUnit 5 test suite covering state toggling logic and runtime safety checks.
+- **Enhanced Community Links**: Added direct links to Discord and Ko-fi in ModMenu metadata.
+
 ## [1.0.4+26.2] - 2026-07-22
 
 ### ⚠️ Version Guard Notice

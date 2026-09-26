@@ -16,6 +16,9 @@ repositories {
     maven { url = "https://maven.terraformersmc.com/releases/" }
     maven { url = "https://maven.shedaniel.me/" }
     mavenCentral()
+    flatDir {
+        dirs 'e:/Minecraft Project/DasikLibrary-Rebuilt/Archive/builds'
+    }
 }
 
 dependencies {
@@ -23,6 +26,11 @@ dependencies {
 
     implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    implementation "net.dasik.social:dasik-library:1.9.2"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.2"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
 }
 
 processResources {
@@ -55,6 +63,10 @@ tasks.withType(JavaCompile).configureEach {
     it.options.release = 25
 }
 
+test {
+    useJUnitPlatform()
+}
+
 jar {
     from("LICENSE") {
         rename { String name -> name + "_" + project.archives_base_name }
@@ -78,24 +90,24 @@ afterEvaluate {
             dependsOn targetJarTask
             doLast {
                 def jarFile = targetJarTask.archiveFile.get().asFile
+                if (!jarFile.exists()) {
+                    jarFile = file("build/libs/${project.archives_base_name}-${project.mod_version}.jar")
+                }
                 if (jarFile.exists()) {
-                    // Point 1: Mod Local Archive (Archive/builds)
-                    def localArchiveDir = file("Archive/builds")
-                    localArchiveDir.mkdirs()
-                    copy {
-                        from jarFile
-                        into localArchiveDir
-                    }
-                    println "[DEPLOY-POINT-1] Copied ${jarFile.name} to local Archive: ${localArchiveDir.canonicalPath}"
-
-                    // Also copy to root Archive if present
-                    def rootArchive = file("../Archive")
-                    if (rootArchive.exists()) {
+                    // Point 1: Mod Local Archives
+                    def localArchiveDirs = [
+                        file("Archive/builds"),
+                        file("../Archive"),
+                        file("../Archive Jar of all versions/MC 26.3"),
+                        file("../../Archive Jar of all versions/MC 26.3")
+                    ]
+                    localArchiveDirs.each { dir ->
+                        if (!dir.exists()) dir.mkdirs()
                         copy {
                             from jarFile
-                            into rootArchive
+                            into dir
                         }
-                        println "[DEPLOY-POINT-1-ROOT] Copied ${jarFile.name} to root Archive: ${rootArchive.canonicalPath}"
+                        println "[DEPLOY-POINT-1] Copied ${jarFile.name} to: ${dir.canonicalPath}"
                     }
 
                     // Point 2: Central Release Hub Archives
