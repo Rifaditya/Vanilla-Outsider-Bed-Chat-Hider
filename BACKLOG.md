@@ -10,7 +10,7 @@ This file tracks planned features, technical refinements, performance optimizati
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `[BL-BCH-001]` | `[TECH_DEBT]` | Update Bed Chat Hider MC 26.2 to use Dasik Library MC 26.2 | `[MEDIUM]` | `26.2` | `✅ RESOLVED` |
 | `[BL-BCH-002]` | `[TECH_DEBT]` | Update Bed Chat Hider MC 26.3 to use Dasik Library MC 26.3 | `[MEDIUM]` | `26.3` | `✅ RESOLVED` |
-| `[BL-BCH-003]` | `[FEATURE]` | Multi-Era Anchor Porting: Bed Chat Hider | `[HIGH]` | `Multi-Era` | `📌 DEFERRED` |
+| `[BL-BCH-003]` | `[FEATURE]` | Multi-Era Anchor Porting: Bed Chat Hider | `[HIGH]` | `Multi-Era` | `✅ RESOLVED` |
 
 ---
 
@@ -68,7 +68,7 @@ Bed Chat Hider MC 26.3 currently lacks the `dasik-library` runtime dependency.
 ### [BL-BCH-003] Multi-Era Anchor Porting: Bed Chat Hider
 - **Category**: `[FEATURE]`
 - **Priority**: `[HIGH]`
-- **Status**: `📌 DEFERRED`
+- **Status**: `✅ RESOLVED`
 - **Target Component(s)**: Multi-subproject directories, `InBedChatScreenMixin.java`, `BedChatHiderConfig.java`, `BedChatHiderGameRules.java`, `build.gradle`, `fabric.mod.json`, `RELEASE_QUEUE.md`
 - **Date Added**: 2026-09-25
 
@@ -114,11 +114,11 @@ Per Multi-Era Version Matrix and 1 Jar 1 Version Policy, port mod across all mis
   - [x] Clean binary compilation (`./gradlew build --no-daemon`)
   - [x] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
   - [x] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
-- [ ] **Anchor: MC 1.20.1 (Java 17, Loom 1.4-1.10, Mojang mappings, `new Identifier`, primitive NBT CompoundTag, `FabricItemSettings`, `GameRules.Category` enum)**
-  - [ ] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
-  - [ ] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
-  - [ ] Headless unit & integration test suite pass (`./gradlew test --no-daemon`)
-  - [ ] Clean binary compilation (`./gradlew build --no-daemon`)
-  - [ ] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
-  - [ ] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
+- [x] **Anchor: MC 1.20.1 (Java 17, Loom 1.4-1.10, Mojang mappings, `new Identifier`, primitive NBT CompoundTag, `FabricItemSettings`, `GameRules.Category` enum)**
+  - [x] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
+  - [x] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
+  - [x] Headless unit & integration test suite pass (`./gradlew test --no-daemon`)
+  - [x] Clean binary compilation (`./gradlew build --no-daemon`)
+  - [x] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
+  - [x] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
 
