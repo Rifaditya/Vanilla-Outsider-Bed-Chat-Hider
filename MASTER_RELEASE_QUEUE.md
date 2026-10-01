@@ -11,6 +11,8 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **MC 26.3** | Modern Lead | `1.0.4+26.3` | `1.0.5+26.3` | 🟢 **Ready to Publish** | Dasik Library Integration & automated test suite. |
 | **MC 26.2** | Modern Predecessor | `1.0.4+26.2` | `1.0.5+26.2` | 🟢 **Ready to Publish** | Dasik Library Integration & automated test suite. |
+| **MC 26.1.2** | Modern Anchor | — | `1.0.5+26.1.2` | 🟢 **Ready to Publish** | Modern Sovereign Anchor Port with Dasik Library integration. |
+| **MC 1.21.11** | Transitional Late Anchor | — | `1.0.0+1.21.11` | 🟢 **Ready to Publish** | Transitional Late Anchor Port with Dasik Library 1.1.0+1.21.11 integration. |
 
 ---
 

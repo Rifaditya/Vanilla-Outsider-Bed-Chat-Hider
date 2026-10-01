@@ -89,24 +89,24 @@ Per Multi-Era Version Matrix and 1 Jar 1 Version Policy, port mod across all mis
 #### 🧪 Verification & Acceptance Criteria
 
 ##### Phase 1: Modern Sovereign Anchors (Priority 1)
-- [ ] **Anchor: MC 26.1 / 26.1.2**
-  - [ ] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
-  - [ ] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
-  - [ ] Headless unit & integration test suite pass (`./gradlew test --no-daemon`)
-  - [ ] Clean binary compilation (`./gradlew build --no-daemon`)
-  - [ ] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
-  - [ ] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
+- [x] **Anchor: MC 26.1 / 26.1.2**
+  - [x] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
+  - [x] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
+  - [x] Headless unit & integration test suite pass (`./gradlew test --no-daemon`)
+  - [x] Clean binary compilation (`./gradlew build --no-daemon`)
+  - [x] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
+  - [x] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
 - [x] **Anchor: MC 26.2 - Already established baseline** (Subproject: `Bed Chat Hider v26.2`)
 - [x] **Anchor: MC 26.3 - Already established baseline** (Subproject: `Bed Chat Hider v26.3`)
 
 ##### Phase 2: Older Anchors (Priority 2)
-- [ ] **Anchor: MC 1.21.11 (Java 21, Loom 1.15-SNAPSHOT `fabric-loom-remap`, Mojang mappings, `Identifier.of`, `Optional<T>` CompoundTag, relocated entity packages)**
-  - [ ] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
-  - [ ] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
-  - [ ] Headless unit & integration test suite pass (`./gradlew test --no-daemon`)
-  - [ ] Clean binary compilation (`./gradlew build --no-daemon`)
-  - [ ] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
-  - [ ] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
+- [x] **Anchor: MC 1.21.11 (Java 21, Loom 1.15-SNAPSHOT `fabric-loom-remap`, Mojang mappings, `Identifier.of`, `Optional<T>` CompoundTag, relocated entity packages)**
+  - [x] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
+  - [x] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
+  - [x] Headless unit & integration test suite pass (`./gradlew test --no-daemon`)
+  - [x] Clean binary compilation (`./gradlew build --no-daemon`)
+  - [x] Mandatory Universal 4-Point Distribution (Local Archive, Hub Archive, External Vault `D:\`, Launcher Test Profile)
+  - [x] Release queue registration in `RELEASE_QUEUE.md` (`- [ ]`) and `CHANGELOG.md` entry
 - [ ] **Anchor: MC 1.21.1 (Java 21, Loom 1.10+, Mojang mappings, `Identifier.of`, `DataComponents`, native `Attributes.SCALE`)**
   - [ ] Subproject directory & build script scaffolding (`build.gradle`, `gradle.properties`, `settings.gradle`)
   - [ ] Source adaptation, API/mixin relocation, and dasik-library wiring for target version
