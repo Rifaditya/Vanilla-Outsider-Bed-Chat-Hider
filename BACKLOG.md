@@ -6,9 +6,7 @@ This file tracks planned features, technical refinements, performance optimizati
 
 ## 📊 Backlog Summary
 
-| ID | Category | Title | Priority | Target Version | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| — | — | *No active backlog items* | — | — | — |
+*No active backlog items*
 
 ---
 
@@ -21,4 +19,4 @@ This file tracks planned features, technical refinements, performance optimizati
 
 ## 📝 Detailed Backlog Entries
 
-*(All previous items have been resolved and documented in CHANGELOG.md, RELEASE_QUEUE.md, and Doc/Develop/Changelogs/History.md. New items will be queued here.)*
+*(All queued tasks resolved and archived in History.md and RELEASE_QUEUE.md)*
