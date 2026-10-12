@@ -2,6 +2,12 @@
 
 All notable changes to Vanilla Outsider: Bed Chat Hider (MC 1.21.11) will be documented in this file.
 
+## [1.0.1+1.21.11] - 2026-10-12
+
+### Fixed
+- **Runtime Safety**: Purged ModVersionGuard reflection runtime hazard and Knot ClassLoader startup checks.
+- **Dependency Alignment**: Verified Dasik Library dependency bounds (`>=1.1.0`).
+
 ## [1.0.0+1.21.11] - 2026-10-01
 
 ### Added

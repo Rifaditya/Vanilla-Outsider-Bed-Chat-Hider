@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.6+26.3] - 2026-10-12
+
+### Fixed
+- **Runtime Safety**: Purged ModVersionGuard reflection runtime hazard and Knot ClassLoader startup checks.
+- **Dependency Alignment**: Aligned Dasik Library dependency bounds to `>=1.9.0`.
+
 ## [1.0.5+26.3] - 2026-09-24
 
 ### Added

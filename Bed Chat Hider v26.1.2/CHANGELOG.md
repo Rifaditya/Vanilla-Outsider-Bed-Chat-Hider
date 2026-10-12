@@ -2,6 +2,12 @@
 
 All notable changes to the Minecraft 26.1.2 port of Vanilla Outsider: Bed Chat Hider will be documented in this file.
 
+## [1.0.6+26.1.2] - 2026-10-12
+
+### Fixed
+- **Runtime Safety**: Purged ModVersionGuard reflection runtime hazard and Knot ClassLoader startup checks.
+- **Dependency Alignment**: Aligned Dasik Library dependency bounds to `>=1.9.0`.
+
 ## [1.0.5+26.1.2] - 2026-10-01
 
 ### Added

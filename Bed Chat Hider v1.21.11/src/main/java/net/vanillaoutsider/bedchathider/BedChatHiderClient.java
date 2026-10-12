@@ -3,7 +3,6 @@ package net.vanillaoutsider.bedchathider;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.dasik.social.api.SocialLinks;
-import net.dasik.social.util.ModVersionGuard;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +15,6 @@ public class BedChatHiderClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        ModVersionGuard.verifyEnvironment();
         LOGGER.info("Vanilla Outsider: Bed Chat Hider 1.21.11 initialized! Community: {}, Support: {}", SocialLinks.DISCORD_INVITE_URL, SocialLinks.KOFI_URL);
     }
 }
