@@ -2,7 +2,6 @@
 package net.vanillaoutsider.bedchathider;
 
 import net.dasik.social.api.SocialLinks;
-import net.dasik.social.util.ModVersionGuard;
 import net.vanillaoutsider.bedchathider.util.BedChatHiderSupport;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -74,13 +73,5 @@ class BedChatHiderStateTest {
         assertNotNull(formatted);
         assertTrue(formatted.contains(SocialLinks.DISCORD_INVITE_URL));
         assertTrue(formatted.contains(SocialLinks.KOFI_URL));
-    }
-
-    @Test
-    @DisplayName("Verify ModVersionGuard safety: verifyEnvironment executes cleanly")
-    void testModVersionGuardEnvironment() {
-        assertDoesNotThrow(() -> {
-            ModVersionGuard.verifyEnvironment();
-        });
     }
 }

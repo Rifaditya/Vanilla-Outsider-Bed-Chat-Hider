@@ -5,5 +5,5 @@
 | ⏳ | 1.0.1+1.21.11 | 1.21.11 | 2026-10-12 | release | ModVersionGuard reflection purge & library bound alignment |
 | ✅ | 1.0.0+1.21.11 | 1.21.11 | 2026-10-01 | release | Initial Transitional Late Anchor Port |
 
-- [x] **1.0.1+1.21.11** (2026-10-12) - ModVersionGuard reflection purge & library bound alignment.
-- [x] **1.0.0+1.21.11** (2026-10-01)
+- [ ] **1.0.1+1.21.11** (2026-10-12) - ModVersionGuard reflection purge & library bound alignment.
+- [ ] **1.0.0+1.21.11** (2026-10-01)

@@ -3,7 +3,6 @@ package net.vanillaoutsider.bedchathider;
 
 import net.dasik.social.api.SocialLinks;
 import net.dasik.social.api.config.DasikSupportHelper;
-import net.dasik.social.util.ModVersionGuard;
 import net.vanillaoutsider.bedchathider.util.BedChatHiderSupport;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -77,20 +76,4 @@ class BedChatHiderStateTest {
         assertTrue(formatted.contains(DasikSupportHelper.KOFI_URL));
     }
 
-    @Test
-    @DisplayName("Verify ModVersionGuard safety: existing classes resolve without exception")
-    void testModVersionGuardExistingClass() {
-        assertDoesNotThrow(() -> {
-            ModVersionGuard.checkClass("Bed Chat Hider Test", "java.lang.String");
-        });
-    }
-
-    @Test
-    @DisplayName("Verify ModVersionGuard safety: missing class throws RuntimeException with guard banner")
-    void testModVersionGuardMissingClass() {
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            ModVersionGuard.checkClass("Bed Chat Hider Test", "net.vanillaoutsider.nonexistent.FakeClass");
-        });
-        assertTrue(exception.getMessage().contains("[PRE-RELEASE / VERSION GUARD WARNING]"));
-    }
 }
