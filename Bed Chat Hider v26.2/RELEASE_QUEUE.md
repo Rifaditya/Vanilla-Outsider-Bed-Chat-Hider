@@ -6,8 +6,8 @@ This file tracks which built versions have been manually uploaded to Modrinth/Cu
 
 - [ ] **1.0.6+26.2** (2026-10-12) - ModVersionGuard reflection purge & library bound alignment.
 - [ ] **`1.0.5+26.2`** (2026-09-24) - Dasik Library Integration.
-- [ ] **`1.0.4+26.2`** (2026-07-22) - ModVersionGuard Knot ClassLoader Fix.
-- [ ] **`1.0.3+26.2`** (2026-07-22) - Forward Compatibility & Version Guard.
-- [ ] **`1.0.2-26.2`** (2026-07-14) - Standalone zero-dependency refactor.
-- [ ] **`1.0.1-26.2`** (2026-07-14) - Json metadata fix.
+- [x] **`1.0.4+26.2`** (2026-07-22) - ModVersionGuard Knot ClassLoader Fix.
+- [x] **`1.0.3+26.2`** (2026-07-22) - Forward Compatibility & Version Guard.
+- [x] **`1.0.2-26.2`** (2026-07-14) - Standalone zero-dependency refactor.
+- [x] **`1.0.1-26.2`** (2026-07-14) - Json metadata fix.
 - [x] **`1.0.0-26.2`** (2026-07-14) - Initial release of Bed Chat Hider for Minecraft 26.2.
