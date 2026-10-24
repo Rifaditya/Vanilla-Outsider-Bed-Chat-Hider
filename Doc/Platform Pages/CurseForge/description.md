@@ -80,7 +80,12 @@
 <hr />
 
 <h2>🔧 Configuration</h2>
-<p>This mod is plug-and-play with <strong>zero config files or GameRules</strong>. The toggle state is stored purely in-memory during your current session. There are no configuration screens or external GUI dependencies required.</p>
+<p>Bed Chat Hider is completely plug-and-play with zero setup required, but also includes optional in-game configuration through <strong>ModMenu</strong> and <strong>YetAnotherConfigLib (YACL)</strong>:</p>
+<ul>
+    <li><strong><code>suppress_sleep_vignette</code></strong> <em>(Default: <code>false</code>)</em>: Eliminates the dark sleeping vignette overlay when resting in a bed. <em>(Note: If companion mod <strong>True Sleep</strong> is installed, True Sleep automatically manages sleep visuals and takes precedence cleanly without collision).</em></li>
+    <li><strong><code>auto_hide_chat</code></strong> <em>(Default: <code>false</code>)</em>: Automatically hides the chat overlay upon entering any bed.</li>
+</ul>
+<p>Settings are automatically saved locally to <code>.minecraft/config/bedchathider.json</code>. If ModMenu or YACL are not installed, the mod runs seamlessly with safe defaults with zero crash risk.</p>
 
 <hr />
 

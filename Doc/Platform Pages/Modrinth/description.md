@@ -69,8 +69,14 @@ Safely intercepts and blocks keyboard typing, scrolling, and clicking on the inv
 
 ---
 
-## 🔧 Configuration
-This mod is plug-and-play with **zero config files or GameRules**. The toggle state is stored purely in-memory during your current session. There are no configuration screens or external GUI dependencies required.
+## 🔧 Configuration & Ergonomics
+
+Bed Chat Hider is completely plug-and-play with zero setup required, but also includes optional in-game configuration through **ModMenu** and **YetAnotherConfigLib (YACL)**:
+
+* **suppress_sleep_vignette** *(Default: alse)*: Eliminates the dark sleeping vignette overlay when resting in a bed. *(Note: If companion mod **[True Sleep](https://modrinth.com/mod/vanilla-outsider-true-sleep)** is installed, True Sleep automatically manages sleep visuals and takes precedence cleanly without collision).*
+* **uto_hide_chat** *(Default: alse)*: Automatically hides the chat overlay upon entering any bed.
+
+Settings are automatically saved locally to .minecraft/config/bedchathider.json. If ModMenu or YACL are not installed, the mod runs seamlessly with safe defaults with zero crash risk.
 
 ---
 
