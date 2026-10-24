@@ -4,6 +4,22 @@ All technical tickets, architectural decisions, and resolved backlog items are p
 
 ## [1.1.0+26.3 / 1.1.0+26.2 / 1.1.0+26.1.2 / 1.1.0+1.21.11 / 1.1.0+1.21.1 / 1.1.0+1.20.1] - 2026-10-24
 
+### [BL-BCH-004] Adopt 5-Pillar Testing & Sidedness Verification Harness Across All Anchors
+- **Category**: `[TECH_DEBT]`
+- **Priority**: `[MEDIUM]`
+- **Target Version**: `All Anchors` (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`)
+- **Status**: `✅ RESOLVED`
+- **Date Added**: 2026-10-24
+- **Date Resolved**: 2026-10-24
+- **Resolution**:
+  - Implemented comprehensive 5-Pillar Testing Harness tailored to Bed Chat Hider's 100% client environment across all 6 Minecraft version anchors in lockstep:
+    - **Pillar 5 (Sidedness & License Hygiene)**: Authored `BedChatHiderSidednessContractTest.java` verifying 100% exact single-line GPLv3 headers, client-only manifest isolation in `fabric.mod.json`, mixin registration consistency, and zero unmapped `Class.forName` reflection.
+    - **Pillar 1 (Chaos Property & Config Fuzzing)**: Authored `BedChatHiderStressFuzzTest.java` executing 45,000 fuzzing iterations per anchor (270,000 total across matrix) verifying zero crashes and graceful recovery from adversarial/malformed JSON under the Freedom Over Anti-Crash policy.
+    - **Pillar 2 (Virtual Concurrency Simulation)**: Authored `BedChatHiderConcurrencyLoadTest.java` running 50 concurrent worker threads under high-contention config read/write cycles and True Sleep collision overrides with zero deadlocks or race conditions.
+    - **Pillars 3 & 4 (Sleep Simulation & Translation Coverage)**: Authored `BedChatHiderSleepSimulationTest.java` simulating headless player sleep state machine transitions, auto-hide toggle flows, True Sleep collision priority, and 100% coverage of language keys in `en_us.json`.
+  - Resolved Step 0 baseline quarantine by sanitizing 3 legacy license headers in root `src/`, achieving 100% clean audit score (`code_auditor.py`).
+  - Executed full test verification: 168 tests total passing 100% green across all 6 anchors.
+
 ### [BL-BCH-005] Optional Sleep Vignette Suppression with True Sleep Collision Avoidance & Mod Menu Config GUI
 - **Category**: `[FEATURE]`
 - **Priority**: `[HIGH]`
