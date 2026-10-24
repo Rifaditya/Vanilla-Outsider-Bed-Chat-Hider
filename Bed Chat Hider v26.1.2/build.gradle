@@ -17,7 +17,7 @@ repositories {
     maven { url = "https://maven.shedaniel.me/" }
     mavenCentral()
     flatDir {
-        dirs 'e:/Minecraft Project/DasikLibrary-Rebuilt/Archive/builds'
+        dirs 'e:/Minecraft Project/DasikLibrary-Rebuilt/Archive/builds', 'e:/Minecraft Project/minecraft-mod-release-hub/archives/Dasik Library'
     }
 }
 
@@ -28,6 +28,10 @@ dependencies {
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     implementation "net.dasik.social:dasik-library:${project.dasik_library_version}"
+
+    // Optional GUI Dependencies (YACL + ModMenu)
+    compileOnly "com.terraformersmc:modmenu:18.0.0-beta.1"
+    testImplementation "com.terraformersmc:modmenu:18.0.0-beta.1"
 
     testImplementation "org.junit.jupiter:junit-jupiter:5.10.2"
     testRuntimeOnly "org.junit.platform:junit-platform-launcher"

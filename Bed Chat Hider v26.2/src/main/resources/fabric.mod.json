@@ -18,6 +18,9 @@
     "entrypoints": {
         "client": [
             "net.vanillaoutsider.bedchathider.BedChatHiderClient"
+        ],
+        "modmenu": [
+            "net.vanillaoutsider.bedchathider.config.BedChatHiderModMenu"
         ]
     },
     "mixins": [
@@ -42,5 +45,9 @@
         "minecraft": ">=26.2-",
         "dasik-library": ">=1.9.0",
         "java": ">=25"
+    },
+    "suggests": {
+        "yet-another-config-lib": "*",
+        "modmenu": "*"
     }
 }

@@ -2,6 +2,22 @@
 
 All technical tickets, architectural decisions, and resolved backlog items are permanently archived here.
 
+## [1.1.0+26.3 / 1.1.0+26.2 / 1.1.0+26.1.2 / 1.1.0+1.21.11 / 1.1.0+1.21.1 / 1.1.0+1.20.1] - 2026-10-24
+
+### [BL-BCH-005] Optional Sleep Vignette Suppression with True Sleep Collision Avoidance & Mod Menu Config GUI
+- **Category**: `[FEATURE]`
+- **Priority**: `[HIGH]`
+- **Target Version**: `All Anchors` (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`)
+- **Status**: `✅ RESOLVED`
+- **Date Added**: 2026-10-24
+- **Date Resolved**: 2026-10-24
+- **Resolution**:
+  - Implemented client configuration `BedChatHiderConfig` with options `suppressSleepVignette` and `autoHideChat`, persisted to `.minecraft/config/bedchathider.json`.
+  - Added optional Mod Menu integration `BedChatHiderModMenu` powered by DasikLibrary's `UniversalConfigScreen` with safe YACL fallback.
+  - Implemented smart companion mod collision avoidance in `BedChatHiderSupport.shouldSuppressSleepVignette()`: dynamically defers vignette suppression to companion mod **Vanilla Outsider: True Sleep** (`vanilla-outsider-true-sleep`) when loaded.
+  - Injected `HudMixin` into in-game HUD rendering to cancel sleep vignette overlay when suppression is active.
+  - Verified 100% headless tests across all 6 anchors. Built and deployed `1.1.0+<MC>` release JARs across all 4 deployment archive tiers.
+
 ## [1.0.6+26.3 / 1.0.6+26.2 / 1.0.6+26.1.2 / 1.0.1+1.21.11 / 1.0.1+1.21.1 / 1.0.1+1.20.1] - 2026-10-12
 
 ### [BL-BCH-003] Purge ModVersionGuard String Reflection Runtime Hazard Across All Anchors

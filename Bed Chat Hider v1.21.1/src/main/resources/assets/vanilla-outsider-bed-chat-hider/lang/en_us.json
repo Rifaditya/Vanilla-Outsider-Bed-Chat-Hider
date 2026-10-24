@@ -1,4 +1,10 @@
 {
   "vanilla-outsider-bed-chat-hider.hideChat": "Hide Chat",
-  "vanilla-outsider-bed-chat-hider.showChat": "Show Chat"
+  "vanilla-outsider-bed-chat-hider.showChat": "Show Chat",
+  "config.vanilla-outsider-bed-chat-hider.title": "Bed Chat Hider",
+  "config.vanilla-outsider-bed-chat-hider.category.general": "General Settings",
+  "config.vanilla-outsider-bed-chat-hider.suppress_sleep_vignette": "Suppress Sleep Vignette",
+  "config.vanilla-outsider-bed-chat-hider.suppress_sleep_vignette.desc": "Removes the dark sleeping overlay when resting in a bed. (Note: True Sleep takes priority if installed).",
+  "config.vanilla-outsider-bed-chat-hider.auto_hide_chat": "Auto-Hide Chat on Sleep",
+  "config.vanilla-outsider-bed-chat-hider.auto_hide_chat.desc": "Automatically hide the chat overlay upon entering a bed."
 }

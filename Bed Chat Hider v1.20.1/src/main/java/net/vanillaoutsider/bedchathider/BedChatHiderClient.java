@@ -1,8 +1,9 @@
 // Copyright (C) 2026 Dasik (Rifaditya) | GNU GPLv3
 package net.vanillaoutsider.bedchathider;
 
-import net.fabricmc.api.ClientModInitializer;
 import net.dasik.social.api.SocialLinks;
+import net.fabricmc.api.ClientModInitializer;
+import net.vanillaoutsider.bedchathider.config.BedChatHiderConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,8 @@ public class BedChatHiderClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        BedChatHiderConfig.load();
+        hideChat = BedChatHiderConfig.autoHideChat;
         LOGGER.info("Vanilla Outsider: Bed Chat Hider 1.20.1 initialized! Community: {}, Support: {}", SocialLinks.DISCORD_INVITE_URL, SocialLinks.KOFI_URL);
     }
 }

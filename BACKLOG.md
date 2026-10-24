@@ -1,7 +1,7 @@
 # 📌 Bed Chat Hider Backlog
 
-<!-- Highest Historical ID: BL-BCH-004 (Next Ticket Must Start at BL-BCH-005) -->
-> **Next Available Ticket ID**: `[BL-BCH-005]`
+<!-- Highest Historical ID: BL-BCH-005 (Next Ticket Must Start at BL-BCH-006) -->
+> **Next Available Ticket ID**: `[BL-BCH-006]`
 
 This file tracks planned features, technical refinements, performance optimizations, and deferred bug fixes for **Bed Chat Hider**.
 

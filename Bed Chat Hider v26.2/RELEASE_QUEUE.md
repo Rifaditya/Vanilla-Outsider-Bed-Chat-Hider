@@ -4,6 +4,7 @@ This file tracks which built versions have been manually uploaded to Modrinth/Cu
 
 ## 🚀 Published & Backlog Queue
 
+- [ ] **1.1.0+26.2** (2026-10-24) - Mod Menu config screen, sleep vignette suppression, True Sleep collision avoidance, auto-hide chat.
 - [ ] **1.0.6+26.2** (2026-10-12) - ModVersionGuard reflection purge & library bound alignment.
 - [ ] **`1.0.5+26.2`** (2026-09-24) - Dasik Library Integration.
 - [x] **`1.0.4+26.2`** (2026-07-22) - ModVersionGuard Knot ClassLoader Fix.
