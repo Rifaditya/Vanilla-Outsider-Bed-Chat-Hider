@@ -1,7 +1,7 @@
 # 📌 Bed Chat Hider Backlog
 
-<!-- Highest Historical ID: BL-BCH-005 (Next Ticket Must Start at BL-BCH-006) -->
-> **Next Available Ticket ID**: `[BL-BCH-006]`
+<!-- Highest Historical ID: BL-BCH-007 (Next Ticket Must Start at BL-BCH-008) -->
+> **Next Available Ticket ID**: `[BL-BCH-008]`
 
 This file tracks planned features, technical refinements, performance optimizations, and deferred bug fixes for **Bed Chat Hider**.
 
@@ -11,7 +11,8 @@ This file tracks planned features, technical refinements, performance optimizati
 
 | ID | Category | Title | Priority | Target Version | Status | Specification |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *No active backlog items* | - | - | - | - | - | - |
+| [`BL-BCH-006`](tickets/BL-BCH-006.md) | `[BUGFIX]` | InBedChatScreen F1 Mode Visibility Suppression (F1 Honor Guard) | `[HIGH]` | `All Anchors` | `📌 DEFERRED` | [View Ticket](tickets/BL-BCH-006.md) |
+| [`BL-BCH-007`](tickets/BL-BCH-007.md) | `[FEATURE]` | Cinematic Sleep HUD: Idle Mouse Inactivity Auto-Fade for Bed Buttons & Crosshair | `[HIGH]` | `All Anchors` | `📌 DEFERRED` | [View Ticket](tickets/BL-BCH-007.md) |
 
 ---
 
@@ -25,4 +26,4 @@ This file tracks planned features, technical refinements, performance optimizati
 ## 📝 Detailed Backlog Entries (Modular Storage)
 
 > [!NOTE]
-> **Modular Backlog Architecture**: In accordance with Item 11 of the Studio Constitution (*The Modular Backlog Standard*), detailed specifications, implementation blueprints, and verification checklists are maintained in dedicated atomic ticket files located in [`tickets/`](tickets/). Click any **View Ticket** link in the summary table above or prompt worker agents directly with `tickets/BL-BCH-XXX.md`.
+> **Modular Backlog Architecture**: In accordance with Item 11 of the Studio Constitution (*The Modular Backlog Standard*), detailed specifications, implementation blueprints, and verification checklists are maintained in dedicated atomic ticket files located in [`tickets/`](tickets/README.md). Click any **View Ticket** link in the summary table above or prompt worker agents directly with `tickets/BL-BCH-XXX.md`.
