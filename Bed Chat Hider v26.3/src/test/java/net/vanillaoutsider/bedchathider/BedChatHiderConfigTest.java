@@ -41,6 +41,9 @@ class BedChatHiderConfigTest {
     void testDefaultConfigValues() {
         assertFalse(BedChatHiderConfig.suppressSleepVignette, "suppressSleepVignette should default to false");
         assertFalse(BedChatHiderConfig.autoHideChat, "autoHideChat should default to false");
+        assertTrue(BedChatHiderConfig.enableCinematicSleepFade, "enableCinematicSleepFade should default to true");
+        assertEquals(2.5f, BedChatHiderConfig.cinematicFadeDelaySeconds, 0.001f, "cinematicFadeDelaySeconds should default to 2.5f");
+        assertTrue(BedChatHiderConfig.fadeCrosshairWhenSleeping, "fadeCrosshairWhenSleeping should default to true");
     }
 
     @Test
@@ -48,6 +51,9 @@ class BedChatHiderConfigTest {
     void testSaveAndLoadRoundTrip() {
         BedChatHiderConfig.suppressSleepVignette = true;
         BedChatHiderConfig.autoHideChat = true;
+        BedChatHiderConfig.enableCinematicSleepFade = false;
+        BedChatHiderConfig.cinematicFadeDelaySeconds = 5.0f;
+        BedChatHiderConfig.fadeCrosshairWhenSleeping = false;
 
         BedChatHiderConfig.save();
         assertTrue(Files.exists(testConfigPath), "Config file should exist on disk after save()");
@@ -55,10 +61,14 @@ class BedChatHiderConfigTest {
         BedChatHiderConfig.resetDefaults();
         assertFalse(BedChatHiderConfig.suppressSleepVignette);
         assertFalse(BedChatHiderConfig.autoHideChat);
+        assertTrue(BedChatHiderConfig.enableCinematicSleepFade);
 
         BedChatHiderConfig.load();
         assertTrue(BedChatHiderConfig.suppressSleepVignette, "suppressSleepVignette should be loaded as true");
         assertTrue(BedChatHiderConfig.autoHideChat, "autoHideChat should be loaded as true");
+        assertFalse(BedChatHiderConfig.enableCinematicSleepFade, "enableCinematicSleepFade should be loaded as false");
+        assertEquals(5.0f, BedChatHiderConfig.cinematicFadeDelaySeconds, 0.001f);
+        assertFalse(BedChatHiderConfig.fadeCrosshairWhenSleeping, "fadeCrosshairWhenSleeping should be loaded as false");
     }
 
     @Test
@@ -86,14 +96,20 @@ class BedChatHiderConfigTest {
     }
 
     @Test
-    @DisplayName("Verify resetDefaults() restores initial false states")
+    @DisplayName("Verify resetDefaults() restores initial states")
     void testResetDefaults() {
         BedChatHiderConfig.suppressSleepVignette = true;
         BedChatHiderConfig.autoHideChat = true;
+        BedChatHiderConfig.enableCinematicSleepFade = false;
+        BedChatHiderConfig.cinematicFadeDelaySeconds = 10.0f;
+        BedChatHiderConfig.fadeCrosshairWhenSleeping = false;
 
         BedChatHiderConfig.resetDefaults();
         assertFalse(BedChatHiderConfig.suppressSleepVignette);
         assertFalse(BedChatHiderConfig.autoHideChat);
+        assertTrue(BedChatHiderConfig.enableCinematicSleepFade);
+        assertEquals(2.5f, BedChatHiderConfig.cinematicFadeDelaySeconds, 0.001f);
+        assertTrue(BedChatHiderConfig.fadeCrosshairWhenSleeping);
     }
 
     @Test
@@ -103,10 +119,14 @@ class BedChatHiderConfigTest {
 
         BedChatHiderConfig.suppressSleepVignette = true;
         BedChatHiderConfig.autoHideChat = true;
+        BedChatHiderConfig.enableCinematicSleepFade = false;
 
         BedChatHiderConfig.load();
         assertFalse(BedChatHiderConfig.suppressSleepVignette, "Corrupted config must reset to default false");
         assertFalse(BedChatHiderConfig.autoHideChat, "Corrupted config must reset to default false");
+        assertTrue(BedChatHiderConfig.enableCinematicSleepFade, "Corrupted config must reset to default true");
+        assertEquals(2.5f, BedChatHiderConfig.cinematicFadeDelaySeconds, 0.001f);
+        assertTrue(BedChatHiderConfig.fadeCrosshairWhenSleeping);
     }
 
     @Test
@@ -115,9 +135,13 @@ class BedChatHiderConfigTest {
         assertFalse(Files.exists(testConfigPath));
         BedChatHiderConfig.suppressSleepVignette = true;
         BedChatHiderConfig.autoHideChat = true;
+        BedChatHiderConfig.enableCinematicSleepFade = false;
 
         BedChatHiderConfig.load();
         assertFalse(BedChatHiderConfig.suppressSleepVignette);
         assertFalse(BedChatHiderConfig.autoHideChat);
+        assertTrue(BedChatHiderConfig.enableCinematicSleepFade);
+        assertEquals(2.5f, BedChatHiderConfig.cinematicFadeDelaySeconds, 0.001f);
+        assertTrue(BedChatHiderConfig.fadeCrosshairWhenSleeping);
     }
 }

@@ -22,6 +22,8 @@ repositories {
 }
 
 dependencies {
+    compileOnly "net.fabricmc.fabric-api:fabric-lifecycle-events-v1:4.1.9+ffef5f675d"
+    compileOnly "net.fabricmc.fabric-api:fabric-permission-api-v1:1.0.8+fcdff87f5d"
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
     implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"

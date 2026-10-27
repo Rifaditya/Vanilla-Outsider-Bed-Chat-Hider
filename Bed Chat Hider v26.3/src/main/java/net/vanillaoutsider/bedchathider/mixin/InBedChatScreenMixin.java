@@ -8,6 +8,7 @@ import net.minecraft.client.gui.screens.ChatScreen;
 import net.minecraft.client.gui.screens.InBedChatScreen;
 import net.minecraft.network.chat.Component;
 import net.vanillaoutsider.bedchathider.BedChatHiderClient;
+import net.vanillaoutsider.bedchathider.client.CinematicSleepController;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -21,6 +22,9 @@ public abstract class InBedChatScreenMixin extends ChatScreen {
     @Shadow
     private Button leaveBedButton;
 
+    @Unique
+    private Button bedchathider$toggleButton;
+
     protected InBedChatScreenMixin(String initial, boolean isDraft) {
         super(initial, isDraft);
     }
@@ -32,7 +36,7 @@ public abstract class InBedChatScreenMixin extends ChatScreen {
             this.leaveBedButton.setWidth(98);
         }
 
-        Button toggleButton = Button.builder(
+        this.bedchathider$toggleButton = Button.builder(
             bedchathider$getButtonMessage(),
             button -> {
                 BedChatHiderClient.hideChat = !BedChatHiderClient.hideChat;
@@ -40,8 +44,20 @@ public abstract class InBedChatScreenMixin extends ChatScreen {
             }
         ).bounds(this.width / 2 + 2, this.height - 40, 98, 20).build();
 
-        this.addRenderableWidget(toggleButton);
+        this.addRenderableWidget(this.bedchathider$toggleButton);
         bedchathider$updateChatState();
+        CinematicSleepController.reset();
+    }
+
+    @Inject(method = "onClose", at = @At("HEAD"))
+    private void onOnClose(CallbackInfo ci) {
+        CinematicSleepController.reset();
+    }
+
+    @Override
+    public void mouseMoved(double mouseX, double mouseY) {
+        CinematicSleepController.onMouseMove(mouseX, mouseY);
+        super.mouseMoved(mouseX, mouseY);
     }
 
     @Unique

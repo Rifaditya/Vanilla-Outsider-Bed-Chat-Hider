@@ -31,12 +31,24 @@ public final class BedChatHiderConfig {
     @ConfigOption(category = "general", nameKey = "config.vanilla-outsider-bed-chat-hider.auto_hide_chat", descriptionKey = "config.vanilla-outsider-bed-chat-hider.auto_hide_chat.desc")
     public static boolean autoHideChat = false;
 
+    @ConfigOption(category = "general", nameKey = "config.vanilla-outsider-bed-chat-hider.enable_cinematic_sleep_fade", descriptionKey = "config.vanilla-outsider-bed-chat-hider.enable_cinematic_sleep_fade.desc")
+    public static boolean enableCinematicSleepFade = true;
+
+    @ConfigOption(category = "general", nameKey = "config.vanilla-outsider-bed-chat-hider.cinematic_fade_delay_seconds", descriptionKey = "config.vanilla-outsider-bed-chat-hider.cinematic_fade_delay_seconds.desc")
+    public static float cinematicFadeDelaySeconds = 2.5f;
+
+    @ConfigOption(category = "general", nameKey = "config.vanilla-outsider-bed-chat-hider.fade_crosshair_when_sleeping", descriptionKey = "config.vanilla-outsider-bed-chat-hider.fade_crosshair_when_sleeping.desc")
+    public static boolean fadeCrosshairWhenSleeping = true;
+
     private BedChatHiderConfig() {
     }
 
     public static void resetDefaults() {
         suppressSleepVignette = false;
         autoHideChat = false;
+        enableCinematicSleepFade = true;
+        cinematicFadeDelaySeconds = 2.5f;
+        fadeCrosshairWhenSleeping = true;
     }
 
     public static Path getConfigPath() {
@@ -82,6 +94,21 @@ public final class BedChatHiderConfig {
             } else {
                 autoHideChat = false;
             }
+            if (json.has("enableCinematicSleepFade")) {
+                enableCinematicSleepFade = json.get("enableCinematicSleepFade").getAsBoolean();
+            } else {
+                enableCinematicSleepFade = true;
+            }
+            if (json.has("cinematicFadeDelaySeconds")) {
+                cinematicFadeDelaySeconds = json.get("cinematicFadeDelaySeconds").getAsFloat();
+            } else {
+                cinematicFadeDelaySeconds = 2.5f;
+            }
+            if (json.has("fadeCrosshairWhenSleeping")) {
+                fadeCrosshairWhenSleeping = json.get("fadeCrosshairWhenSleeping").getAsBoolean();
+            } else {
+                fadeCrosshairWhenSleeping = true;
+            }
         } catch (Exception e) {
             LOGGER.warn("Failed to parse Bed Chat Hider configuration at {}, resetting to defaults: {}", path.getFileName(), e.getMessage());
             resetDefaults();
@@ -101,6 +128,9 @@ public final class BedChatHiderConfig {
             JsonObject json = new JsonObject();
             json.addProperty("suppressSleepVignette", suppressSleepVignette);
             json.addProperty("autoHideChat", autoHideChat);
+            json.addProperty("enableCinematicSleepFade", enableCinematicSleepFade);
+            json.addProperty("cinematicFadeDelaySeconds", cinematicFadeDelaySeconds);
+            json.addProperty("fadeCrosshairWhenSleeping", fadeCrosshairWhenSleeping);
 
             try (BufferedWriter writer = Files.newBufferedWriter(path)) {
                 GSON.toJson(json, writer);

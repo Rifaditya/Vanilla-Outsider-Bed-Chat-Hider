@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0+26.2] - 2026-10-27
+
+### Added
+- **Cinematic Sleep HUD Auto-Fade**: Seamlessly fades out `[ Leave Bed ]` and chat toggle buttons during inactivity after an idle delay (default 2.5s) to allow serene, immersive observation of celestial twilight and morning sunrises.
+- **Blind Click Protection**: Clicking while bed UI elements are fully faded wakes the HUD immediately without accidentally triggering the leave bed button or background clicks.
+- **Sleep Crosshair Suppression**: Smoothly suppresses the center crosshair while resting in bed once idle fade engages (`fade_crosshair_when_sleeping`).
+- **Sub-Pixel Deadzone Drift Filter**: 2.0px sensor jitter filtering prevents microscopic mouse noise from waking the UI prematurely.
+- **Configurable Inactivity Delay & Toggles**: Fully configurable through Mod Menu (`enable_cinematic_sleep_fade`, `cinematic_fade_delay_seconds`, `fade_crosshair_when_sleeping`).
+
 ## 1.1.1+26.2
 
 ### Fixed

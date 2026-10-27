@@ -6,5 +6,11 @@
   "config.vanilla-outsider-bed-chat-hider.suppress_sleep_vignette": "Suppress Sleep Vignette",
   "config.vanilla-outsider-bed-chat-hider.suppress_sleep_vignette.desc": "Removes the dark sleeping overlay when resting in a bed. (Note: True Sleep takes priority if installed).",
   "config.vanilla-outsider-bed-chat-hider.auto_hide_chat": "Auto-Hide Chat on Sleep",
-  "config.vanilla-outsider-bed-chat-hider.auto_hide_chat.desc": "Automatically hide the chat overlay upon entering a bed."
+  "config.vanilla-outsider-bed-chat-hider.auto_hide_chat.desc": "Automatically hide the chat overlay upon entering a bed.",
+  "config.vanilla-outsider-bed-chat-hider.enable_cinematic_sleep_fade": "Cinematic Sleep Auto-Fade",
+  "config.vanilla-outsider-bed-chat-hider.enable_cinematic_sleep_fade.desc": "Gradually fades out bed buttons and chat input while resting in bed if idle.",
+  "config.vanilla-outsider-bed-chat-hider.cinematic_fade_delay_seconds": "Cinematic Fade Inactivity Delay (s)",
+  "config.vanilla-outsider-bed-chat-hider.cinematic_fade_delay_seconds.desc": "Seconds of idle stillness before bed UI elements begin fading out.",
+  "config.vanilla-outsider-bed-chat-hider.fade_crosshair_when_sleeping": "Fade Crosshair When Sleeping",
+  "config.vanilla-outsider-bed-chat-hider.fade_crosshair_when_sleeping.desc": "Also hides the center crosshair when sleep HUD elements fade out."
 }

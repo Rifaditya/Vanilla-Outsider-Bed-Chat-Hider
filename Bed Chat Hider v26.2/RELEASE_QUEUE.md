@@ -4,6 +4,7 @@ This file tracks which built versions have been manually uploaded to Modrinth/Cu
 
 ## 🚀 Published & Backlog Queue
 
+- [ ] **1.2.0+26.2** (2026-10-27) - Cinematic Sleep HUD auto-fade (BL-BCH-007)
 - [ ] **1.1.1+26.2** (2026-10-27) - InBedChatScreen F1 Mode Visibility Suppression (BL-BCH-006)
 - [ ] **1.1.0+26.2** (2026-10-24) - Mod Menu config screen, sleep vignette suppression, True Sleep collision avoidance, auto-hide chat.
 - [ ] **1.0.6+26.2** (2026-10-12) - ModVersionGuard reflection purge & library bound alignment.
