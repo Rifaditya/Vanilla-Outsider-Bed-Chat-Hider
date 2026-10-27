@@ -2,6 +2,24 @@
 
 All technical tickets, architectural decisions, and resolved backlog items are permanently archived here.
 
+## [1.1.1+26.3 / 1.1.1+26.2 / 1.1.1+26.1.2 / 1.1.1+1.21.11 / 1.1.1+1.21.1 / 1.1.1+1.20.1] - 2026-10-27
+
+### [BL-BCH-006] InBedChatScreen F1 Mode Visibility Suppression (F1 Honor Guard)
+- **Category**: `[BUGFIX]`
+- **Priority**: `[HIGH]`
+- **Target Version**: `All Anchors` (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`)
+- **Status**: `✅ RESOLVED`
+- **Date Added**: 2026-10-25
+- **Date Resolved**: 2026-10-27
+- **Resolution**:
+  - Intercepted `InBedChatScreen` rendering at `HEAD` inside `ChatScreenMixin.java` under `(Object) this instanceof InBedChatScreen`, canceling the render pass whenever GUI visibility suppression is active.
+  - Successfully bridged generational API shifts:
+    - Anchors `1.20.1`, `1.21.1`, `1.21.11`, and `26.1.2`: Checked `this.minecraft.options != null && this.minecraft.options.hideGui`.
+    - Anchors `26.2` and `26.3+`: Handled Mojang's deletion of `Options.hideGui` by checking `this.minecraft.gui.hud.isHidden()` (`[PAT-20261027-001]`).
+  - Preserved input focus, draft retention, and keyboard event routing (`Escape` cleanly wakes the player up even while buttons are visually hidden).
+  - Authored headless verification tests in `BedChatHiderSleepSimulationTest.java` across all 6 anchors.
+  - Built, remapped, and deployed `1.1.1+<MC>` release JARs across all 4 universal distribution points.
+
 ## [1.1.0+26.3 / 1.1.0+26.2 / 1.1.0+26.1.2 / 1.1.0+1.21.11 / 1.1.0+1.21.1 / 1.1.0+1.20.1] - 2026-10-24
 
 ### [BL-BCH-004] Adopt 5-Pillar Testing & Sidedness Verification Harness Across All Anchors

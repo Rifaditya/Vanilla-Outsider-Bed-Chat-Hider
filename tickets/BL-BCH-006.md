@@ -4,8 +4,9 @@
 - **Category**: `[BUGFIX]`
 - **Priority**: `[HIGH]`
 - **Scope**: `All Anchors` (`1.20.1`, `1.21.1`, `1.21.11`, `26.1`, `26.2`, `26.3+`)
-- **Status**: `📌 DEFERRED`
+- **Status**: `✅ RESOLVED`
 - **Date Added**: `2026-10-25`
+- **Date Resolved**: `2026-10-27`
 - **Target Repository / Root**: `Vanilla Outsider Collections\Bed Chat Hider`
 
 ---
@@ -81,8 +82,15 @@ Consequently, when players in bed toggle `F1` hoping to capture clean screenshot
 ---
 
 ## 🏁 6. 5-Pillar Verification Checklist
-- [ ] **Pillar 1 (Chaos Fuzzing)**: 45,000 iterations of rapid F1 toggle and screen lifecycle fuzzing pass with zero NPEs.
-- [ ] **Pillar 2 (Concurrency Load)**: 50 virtual worker threads stressing UI option reads without deadlocks.
-- [ ] **Pillar 3 (Headless Screen State AST)**: Automated headless test asserting `InBedChatScreen` cancels render when `options.hideGui == true`.
-- [ ] **Pillar 4 (Client State Simulation)**: Headless simulation asserting key event pass-through while hidden.
-- [ ] **Pillar 5 (Sidedness & License Hygiene)**: 100% client-side isolation, zero server classes, single-line GPLv3 headers.
+- [x] **Pillar 1 (Chaos Fuzzing)**: 45,000 iterations of rapid F1 toggle and screen lifecycle fuzzing pass with zero NPEs (`BedChatHiderStressFuzzTest`).
+- [x] **Pillar 2 (Concurrency Load)**: 50 virtual worker threads stressing UI option reads without deadlocks (`BedChatHiderConcurrencyLoadTest`).
+- [x] **Pillar 3 (Headless Screen State AST)**: Automated headless test asserting `ChatScreenMixin` cancels render at `HEAD` when `options.hideGui == true` / `gui.hud.isHidden()`.
+- [x] **Pillar 4 (Client State Simulation)**: Headless simulation asserting key event pass-through, draft preservation, and wakeup handling while hidden (`BedChatHiderSleepSimulationTest`).
+- [x] **Pillar 5 (Sidedness & License Hygiene)**: 100% client-side isolation, zero server classes, single-line GPLv3 headers verified (`BedChatHiderSidednessContractTest`).
+
+---
+
+## 🏆 7. Resolution Summary
+- Implemented F1 Honor Guard suppression in `ChatScreenMixin.java` targeting `(Object) this instanceof InBedChatScreen` across all 6 Minecraft version anchors (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`).
+- Seamlessly handled API divergence: `options.hideGui` for 1.20.1–26.1.2; `gui.hud.isHidden()` for modern snapshot 26.2/26.3+ (`[PAT-20261027-001]`).
+- All 6 anchors verified with 100% headless test suites passing. Release JARs built at SemVer `1.1.1` and distributed across all 4 distribution points.

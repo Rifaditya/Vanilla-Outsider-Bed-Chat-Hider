@@ -11,7 +11,7 @@ This file tracks planned features, technical refinements, performance optimizati
 
 | ID | Category | Title | Priority | Target Version | Status | Specification |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`BL-BCH-006`](tickets/BL-BCH-006.md) | `[BUGFIX]` | InBedChatScreen F1 Mode Visibility Suppression (F1 Honor Guard) | `[HIGH]` | `All Anchors` | `📌 DEFERRED` | [View Ticket](tickets/BL-BCH-006.md) |
+| [`BL-BCH-006`](tickets/BL-BCH-006.md) | `[BUGFIX]` | InBedChatScreen F1 Mode Visibility Suppression (F1 Honor Guard) | `[HIGH]` | `All Anchors` | `✅ RESOLVED` | [View Ticket](tickets/BL-BCH-006.md) |
 | [`BL-BCH-007`](tickets/BL-BCH-007.md) | `[FEATURE]` | Cinematic Sleep HUD: Idle Mouse Inactivity Auto-Fade for Bed Buttons & Crosshair | `[HIGH]` | `All Anchors` | `📌 DEFERRED` | [View Ticket](tickets/BL-BCH-007.md) |
 
 ---
