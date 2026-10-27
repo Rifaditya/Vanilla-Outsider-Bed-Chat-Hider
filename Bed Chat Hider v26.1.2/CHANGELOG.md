@@ -2,6 +2,11 @@
 
 All notable changes to the Minecraft 26.1.2 port of Vanilla Outsider: Bed Chat Hider will be documented in this file.
 
+## 1.1.1+26.1.2
+
+### Fixed
+- Pressing F1 while in bed now cleanly hides the "[ Leave Bed ]" and "[ Show Chat ]" / "[ Hide Chat ]" buttons for pristine screenshot and celestial time-lapse capture.
+
 ## [1.1.0+26.1.2] - 2026-10-24
 
 ### Added

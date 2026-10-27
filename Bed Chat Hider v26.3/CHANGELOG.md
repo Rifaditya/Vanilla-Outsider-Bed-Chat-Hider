@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1+26.3
+
+### Fixed
+- Pressing F1 while in bed now cleanly hides the "[ Leave Bed ]" and "[ Show Chat ]" / "[ Hide Chat ]" buttons for pristine screenshot and celestial time-lapse capture.
+
 ## [1.1.0+26.3] - 2026-10-24
 
 ### Added

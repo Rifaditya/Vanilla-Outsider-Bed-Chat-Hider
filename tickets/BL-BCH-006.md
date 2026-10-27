@@ -18,23 +18,38 @@ Consequently, when players in bed toggle `F1` hoping to capture clean screenshot
 ---
 
 ## 🔬 2. Architectural Blueprint & Target Classes
-- **Target Mixin**: `net.vanillaoutsider.bedchathider.mixin.InBedChatScreenMixin`
+- **Target Mixin**: `net.vanillaoutsider.bedchathider.mixin.ChatScreenMixin`
+- **Decompiled Source Reality**: `InBedChatScreen` inherits `render` / `extractRenderState` from `ChatScreen` and does NOT override them. Hooking `InBedChatScreen` directly results in `InvalidMixinException` (method not found). Therefore, the interception cleanly resides in `ChatScreenMixin`, where `(Object) this instanceof InBedChatScreen` rendering is already governed.
 - **Bytecode Interception**:
   - **Sovereign Modern Anchors (MC 26.1 - 26.3+)**:
     ```java
     @Inject(method = "extractRenderState", at = @At("HEAD"), cancellable = true)
-    private void bedchathider$suppressF1Render(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
-        if (this.minecraft != null && this.minecraft.options.hideGui) {
-            ci.cancel();
+    private void onExtractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
+        if ((Object) this instanceof InBedChatScreen) {
+            if (this.minecraft != null && this.minecraft.options != null && this.minecraft.options.hideGui) {
+                ci.cancel();
+                return;
+            }
+            if (BedChatHiderClient.hideChat) {
+                super.extractRenderState(graphics, mouseX, mouseY, a);
+                ci.cancel();
+            }
         }
     }
     ```
   - **Older Anchors (MC 1.20.1 - 1.21.11)**:
     ```java
     @Inject(method = "render", at = @At("HEAD"), cancellable = true)
-    private void bedchathider$suppressF1Render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
-        if (this.minecraft != null && this.minecraft.options.hideGui) {
-            ci.cancel();
+    private void onRender(GuiGraphics graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+        if ((Object) this instanceof InBedChatScreen) {
+            if (this.minecraft != null && this.minecraft.options != null && this.minecraft.options.hideGui) {
+                ci.cancel();
+                return;
+            }
+            if (BedChatHiderClient.hideChat) {
+                super.render(graphics, mouseX, mouseY, delta);
+                ci.cancel();
+            }
         }
     }
     ```
@@ -58,10 +73,10 @@ Consequently, when players in bed toggle `F1` hoping to capture clean screenshot
 ---
 
 ## 🚀 5. Implementation Steps (Code-Level Plan)
-1. In `net.vanillaoutsider.bedchathider.mixin.InBedChatScreenMixin`, add an `@Inject` targeting `HEAD` of the primary render method (`render` or `extractRenderState`) with `cancellable = true`.
-2. Guard the injection with `if (this.minecraft != null && this.minecraft.options.hideGui) { ci.cancel(); }`.
+1. In `net.vanillaoutsider.bedchathider.mixin.ChatScreenMixin`, extend the existing `@Inject` targeting `HEAD` of the primary render method (`render` or `extractRenderState`) to check `if (this.minecraft != null && this.minecraft.options != null && this.minecraft.options.hideGui) { ci.cancel(); return; }`.
+2. Add Pillar 3 and 4 headless assertion tests verifying that when `hideGui == true`, the screen render is suppressed, while key events and draft state remain resilient.
 3. Verify headless test compilation across all anchors (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`).
-4. Validate in-game that pressing `F1` in bed removes both `[ Leave Bed ]` and `[ Show Chat ]` buttons.
+4. Validate in-game that pressing `F1` in bed removes both `[ Leave Bed ]` and `[ Show Chat ]` buttons without blocking `Escape` to wake up.
 
 ---
 

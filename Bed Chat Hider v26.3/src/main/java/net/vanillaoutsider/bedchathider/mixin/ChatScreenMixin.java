@@ -26,9 +26,15 @@ public abstract class ChatScreenMixin extends Screen {
 
     @Inject(method = "extractRenderState", at = @At("HEAD"), cancellable = true)
     private void onExtractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
-        if ((Object) this instanceof InBedChatScreen && BedChatHiderClient.hideChat) {
-            super.extractRenderState(graphics, mouseX, mouseY, a);
-            ci.cancel();
+        if ((Object) this instanceof InBedChatScreen) {
+            if (this.minecraft != null && this.minecraft.gui != null && this.minecraft.gui.hud != null && this.minecraft.gui.hud.isHidden()) {
+                ci.cancel();
+                return;
+            }
+            if (BedChatHiderClient.hideChat) {
+                super.extractRenderState(graphics, mouseX, mouseY, a);
+                ci.cancel();
+            }
         }
     }
 
