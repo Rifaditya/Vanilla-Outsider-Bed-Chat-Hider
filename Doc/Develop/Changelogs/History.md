@@ -2,6 +2,29 @@
 
 All technical tickets, architectural decisions, and resolved backlog items are permanently archived here.
 
+## [1.2.0+26.3 / 1.2.0+26.2 / 1.2.0+26.1.2 / 1.2.0+1.21.11 / 1.2.0+1.21.1 / 1.2.0+1.20.1] - 2026-10-27
+
+### [BL-BCH-007] Cinematic Sleep HUD: Idle Mouse Inactivity Auto-Fade for Bed Buttons & Crosshair
+- **Category**: `[FEATURE]`
+- **Priority**: `[HIGH]`
+- **Target Version**: `All Anchors` (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`)
+- **Status**: `✅ RESOLVED`
+- **Date Added**: 2026-10-25
+- **Date Resolved**: 2026-10-27
+- **Resolution**:
+  - Implemented `CinematicSleepController.java` client inactivity controller tracking cursor position, timestamp, and deadzone drift filtering ($> 2.0\text{ px}$) to smoothly fade UI elements after idle periods.
+  - Intercepted `ChatScreenMixin.java` / `InBedChatScreenMixin.java`:
+    - Injected blind-click protection: when widgets are fully faded (`alpha <= 0.01f`), clicks immediately awaken the UI instead of accidentally triggering background elements or bed exit.
+    - Added alpha modulation across `AbstractWidget` instances (`leaveBedButton`, toggle chat button, chat box) with linear/ease-out interpolation based on `CinematicSleepController.getAlpha()`.
+  - Intercepted `HudMixin.java` crosshair rendering (`renderCrosshair` / `extractCrosshair`) to suppress the center reticle during sleep when `fadeCrosshairWhenSleeping` is enabled.
+  - Added omni-channel configuration options in `BedChatHiderConfig`:
+    - `enableCinematicSleepFade` (default: `true`)
+    - `cinematicFadeDelaySeconds` (default: `2.5f`)
+    - `fadeCrosshairWhenSleeping` (default: `true`)
+    - Localized descriptions and option labels in `assets/vanilla-outsider-bed-chat-hider/lang/en_us.json` across all 6 anchors.
+  - Authored headless verification suite `BedChatHiderCinematicFadeTest.java` fulfilling the 5-pillar verification harness (chaos fuzzing, concurrency load, screen state AST, client interaction simulation, sidedness hygiene).
+  - Built, tested, and validated all 6 version anchors (`1.20.1`, `1.21.1`, `1.21.11`, `26.1.2`, `26.2`, `26.3`) with 100% green test passes.
+
 ## [1.1.1+26.3 / 1.1.1+26.2 / 1.1.1+26.1.2 / 1.1.1+1.21.11 / 1.1.1+1.21.1 / 1.1.1+1.20.1] - 2026-10-27
 
 ### [BL-BCH-006] InBedChatScreen F1 Mode Visibility Suppression (F1 Honor Guard)

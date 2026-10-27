@@ -4,7 +4,7 @@
 - **Category**: `[FEATURE]`
 - **Priority**: `[HIGH]`
 - **Scope**: `All Anchors` (`1.20.1`, `1.21.1`, `1.21.11`, `26.1`, `26.2`, `26.3+`)
-- **Status**: `📌 DEFERRED`
+- **Status**: `✅ RESOLVED`
 - **Date Added**: `2026-10-25`
 - **Target Repository / Root**: `Vanilla Outsider Collections\Bed Chat Hider`
 
@@ -76,8 +76,8 @@ A natural, hands-off **"Cinematic Sleep HUD"** mode where UI clutter smoothly fa
 ---
 
 ## 🏁 6. 5-Pillar Verification Checklist
-- [ ] **Pillar 1 (Chaos Fuzzing)**: Fuzz `CinematicSleepController` delta ticking and alpha bounds over 50,000 randomized steps without NaN, Infinity, or out-of-range alpha values ($0.0 \le \alpha \le 1.0$).
-- [ ] **Pillar 2 (Concurrency Load)**: 50 virtual worker threads polling alpha and registering interactions without race conditions.
-- [ ] **Pillar 3 (Headless Screen State AST)**: Headless assertion verifying widgets render with correct alpha states based on simulated idle timer.
-- [ ] **Pillar 4 (Client State Simulation)**: Headless simulation asserting mouse movement instantly restores full $1.0$ alpha.
-- [ ] **Pillar 5 (Sidedness & License Hygiene)**: 100% client-isolated logic, zero server references, GPLv3 license header compliance.
+- [x] **Pillar 1 (Chaos Fuzzing)**: Fuzz `CinematicSleepController` delta ticking and alpha bounds over 50,000 randomized steps without NaN, Infinity, or out-of-range alpha values ($0.0 \le \alpha \le 1.0$).
+- [x] **Pillar 2 (Concurrency Load)**: 50 virtual worker threads polling alpha and registering interactions without race conditions.
+- [x] **Pillar 3 (Headless Screen State AST)**: Headless assertion verifying widgets render with correct alpha states based on simulated idle timer.
+- [x] **Pillar 4 (Client State Simulation)**: Headless simulation asserting mouse movement instantly restores full $1.0$ alpha.
+- [x] **Pillar 5 (Sidedness & License Hygiene)**: 100% client-isolated logic, zero server references, GPLv3 license header compliance.

@@ -1,7 +1,7 @@
 # 🎛️ Master Release Queue: Vanilla Outsider — Bed Chat Hider
 
 > **Mod Project Master Ground-Truth Document**  
-> **Lead SemVer**: `1.1.1`
+> **Lead SemVer**: `1.2.0`
 
 ---
 
@@ -9,12 +9,12 @@
 
 | Target MC | Generational Era | Live on Platforms | Next Queued Version | Status & Cadence Action | Feature Highlights / Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **MC 26.3** | Modern Lead | `1.0.5+26.3` | `1.1.0+26.3` (Next) / `1.1.1+26.3` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard button hiding. |
-| **MC 26.2** | Modern Predecessor | `1.0.5+26.2` | `1.1.0+26.2` (Next) / `1.1.1+26.2` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard button hiding. |
-| **MC 26.1.2** | Modern Anchor | `1.0.5+26.1.2` | `1.1.0+26.1.2` (Next) / `1.1.1+26.1.2` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard button hiding. |
-| **MC 1.21.11** | Transitional Late Anchor | `1.0.0+1.21.11` | `1.1.0+1.21.11` (Next) / `1.1.1+1.21.11` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard button hiding. |
-| **MC 1.21.1** | Transitional Early Anchor | `1.0.0+1.21.1` | `1.1.0+1.21.1` (Next) / `1.1.1+1.21.1` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard button hiding. |
-| **MC 1.20.1** | Legacy Anchor | `1.0.0+1.20.1` | `1.1.0+1.20.1` (Next) / `1.1.1+1.20.1` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard button hiding. |
+| **MC 26.3** | Modern Lead | `1.0.5+26.3` | `1.1.0+26.3` (Next) / `1.1.1+26.3` / `1.2.0+26.3` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard, cinematic sleep HUD auto-fade. |
+| **MC 26.2** | Modern Predecessor | `1.0.5+26.2` | `1.1.0+26.2` (Next) / `1.1.1+26.2` / `1.2.0+26.2` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard, cinematic sleep HUD auto-fade. |
+| **MC 26.1.2** | Modern Anchor | `1.0.5+26.1.2` | `1.1.0+26.1.2` (Next) / `1.1.1+26.1.2` / `1.2.0+26.1.2` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard, cinematic sleep HUD auto-fade. |
+| **MC 1.21.11** | Transitional Late Anchor | `1.0.0+1.21.11` | `1.1.0+1.21.11` (Next) / `1.1.1+1.21.11` / `1.2.0+1.21.11` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard, cinematic sleep HUD auto-fade. |
+| **MC 1.21.1** | Transitional Early Anchor | `1.0.0+1.21.1` | `1.1.0+1.21.1` (Next) / `1.1.1+1.21.1` / `1.2.0+1.21.1` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard, cinematic sleep HUD auto-fade. |
+| **MC 1.20.1** | Legacy Anchor | `1.0.0+1.20.1` | `1.1.0+1.20.1` (Next) / `1.1.1+1.20.1` / `1.2.0+1.20.1` | 🟢 **Ready to Publish** | Mod Menu config screen, sleep vignette suppression, F1 honor guard, cinematic sleep HUD auto-fade. |
 
 ---
 
