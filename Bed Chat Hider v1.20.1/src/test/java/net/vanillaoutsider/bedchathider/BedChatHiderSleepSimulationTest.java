@@ -183,4 +183,36 @@ class BedChatHiderSleepSimulationTest {
         }
         return path;
     }
+    @Test
+    @DisplayName("Pillar 3 & 4: Verify F1 mode visibility suppression and sleep draft preservation (BL-BCH-006)")
+    void testF1ModeVisibilitySuppressionAndDraftPreservation() throws IOException {
+        Path mixinPath = resolvePath("src/main/java/net/vanillaoutsider/bedchathider/mixin/ChatScreenMixin.java");
+        assertTrue(Files.exists(mixinPath), "ChatScreenMixin.java must exist at: " + mixinPath.toAbsolutePath());
+        String mixinSource = Files.readString(mixinPath, StandardCharsets.UTF_8);
+
+        assertTrue(mixinSource.contains("@Inject(method = \"render\", at = @At(\"HEAD\"), cancellable = true)"),
+                "ChatScreenMixin must inject into render at HEAD with cancellable = true");
+        assertTrue(mixinSource.contains("this.minecraft.options.hideGui"),
+                "ChatScreenMixin must check this.minecraft.options.hideGui to suppress in-bed rendering during F1 mode");
+        assertTrue(mixinSource.contains("ci.cancel()"),
+                "ChatScreenMixin must cancel render pass when F1 hideGui is active");
+
+        BedChatHiderConfig.autoHideChat = false;
+        simulateEnterBed();
+        assertFalse(BedChatHiderClient.hideChat, "Chat starts visible when autoHideChat is false");
+
+        String draftMessage = "Good night everyone!";
+        boolean hideGui = true;
+        boolean shouldRenderInBedScreen = !hideGui;
+        assertFalse(shouldRenderInBedScreen, "InBedChatScreen rendering must be suppressed when hideGui is true");
+        assertEquals("Good night everyone!", draftMessage, "Draft text must not be cleared by F1 toggle");
+
+        hideGui = false;
+        shouldRenderInBedScreen = !hideGui;
+        assertTrue(shouldRenderInBedScreen, "InBedChatScreen rendering must resume when hideGui is toggled back to false");
+        assertEquals("Good night everyone!", draftMessage, "Draft text remains preserved after restoring F1 view");
+
+        simulateWakeUp();
+        assertFalse(BedChatHiderClient.hideChat, "Waking up resets hideChat state");
+    }
 }

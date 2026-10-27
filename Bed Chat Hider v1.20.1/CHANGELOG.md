@@ -2,6 +2,11 @@
 
 All notable changes to Vanilla Outsider: Bed Chat Hider (MC 1.20.1) will be documented in this file.
 
+## 1.1.1+1.20.1
+
+### Fixed
+- Pressing F1 while in bed now cleanly hides the "[ Leave Bed ]" and "[ Show Chat ]" / "[ Hide Chat ]" buttons for pristine screenshot and celestial time-lapse capture.
+
 ## [1.1.0+1.20.1] - 2026-10-24
 
 ### Added

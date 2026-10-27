@@ -24,9 +24,15 @@ public abstract class ChatScreenMixin extends Screen {
 
     @Inject(method = "render", at = @At("HEAD"), cancellable = true)
     private void onRender(GuiGraphics graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        if ((Object) this instanceof InBedChatScreen && BedChatHiderClient.hideChat) {
-            super.render(graphics, mouseX, mouseY, delta);
-            ci.cancel();
+        if ((Object) this instanceof InBedChatScreen) {
+            if (this.minecraft != null && this.minecraft.options != null && this.minecraft.options.hideGui) {
+                ci.cancel();
+                return;
+            }
+            if (BedChatHiderClient.hideChat) {
+                super.render(graphics, mouseX, mouseY, delta);
+                ci.cancel();
+            }
         }
     }
 
