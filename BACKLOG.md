@@ -1,7 +1,7 @@
 # 📌 Bed Chat Hider Backlog
 
-<!-- Highest Historical ID: BL-BCH-008 (Next Ticket Must Start at BL-BCH-009) -->
-> **Next Available Ticket ID**: `[BL-BCH-009]`
+<!-- Highest Historical ID: BL-BCH-010 (Next Ticket Must Start at BL-BCH-011) -->
+> **Next Available Ticket ID**: `[BL-BCH-011]`
 
 This file tracks planned features, technical refinements, performance optimizations, and deferred bug fixes for **Bed Chat Hider**.
 
@@ -11,7 +11,9 @@ This file tracks planned features, technical refinements, performance optimizati
 
 | ID | Category | Title | Priority | Target Version | Status | Specification |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [`BL-BCH-009`](tickets/BL-BCH-009.md) | `[TECH_DEBT]` | Scaffold Anchor 7: Bed Chat Hider v26.x (rolling 26.3+) | `[MEDIUM]` | Multi-Version Parity | `✅ RESOLVED` | [View Ticket](tickets/BL-BCH-009.md) |
 | [`BL-BCH-008`](tickets/BL-BCH-008.md) | `[GOVERNANCE]` | Storefront Reconciliation: Align Mod Pages with Current Public Release | `[HIGH]` | `Platform Pages` | `📌 DEFERRED` | [View Ticket](tickets/BL-BCH-008.md) |
+| [`BL-BCH-010`](tickets/BL-BCH-010.md) | `[TECH_DEBT]` | Wiki Audit & Update to Latest Version: Bed Chat Hider | `[MEDIUM]` | `All Anchors` | `📌 DEFERRED` | [View Ticket](tickets/BL-BCH-010.md) |
 
 ---
 
