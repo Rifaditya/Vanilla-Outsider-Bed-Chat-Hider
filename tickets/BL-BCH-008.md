@@ -4,26 +4,29 @@
 - **Category**: `[GOVERNANCE]`
 - **Priority**: `[HIGH]`
 - **Scope**: `Platform Documentation & Metadata`
-- **Status**: `📌 DEFERRED`
+- **Status**: `✅ RESOLVED`
 - **Target Repository / Root**: `Vanilla Outsider Collections/Bed Chat Hider`
+- **Resolved Date**: 2026-11-02
 
 ---
 
 ## 🎯 1. Goal & Definition of Done (The 4-Pillar Objective Architecture)
 
-1. **North Star Objective**: Reconcile Modrinth and CurseForge storefront descriptions to reflect 100% ground-truth features of the current public release (Modrinth `1.0.1+1.21.11` / CurseForge `1.0.6+26.3`), strictly purging unreleased, in-development, or early-access mechanics.
+1. **North Star Objective**: Reconcile Modrinth and CurseForge storefront descriptions to reflect 100% ground-truth features of the current public release (Modrinth & CurseForge `1.1.0+26.3` / `1.1.0+1.21.11` / `1.1.0+1.21.1` / `1.1.0+1.20.1`), strictly purging unreleased, in-development, or early-access mechanics.
 2. **In-Game Experience (Before vs. After)**:
-   - *Before*: Players reading Modrinth and CurseForge descriptions encounter advertised features, commands, or config parameters that only exist in unreleased repository branches or early-access builds, creating confusion and invalid bug reports.
-   - *After*: Storefronts present 100% ground-truth features matching the published binary that players download from Modrinth and CurseForge.
+   - *Before*: Players reading Modrinth and CurseForge descriptions encountered stale claims, conflicting badges ("Zero Dependencies" vs "Requires Fabric API"), corrupted form feed control characters, and risks of advertising unreleased upcoming features.
+   - *After*: Storefronts present 100% ground-truth features matching the published binary that players download from Modrinth and CurseForge, with verified dependencies (Fabric API & Dasik Library), in-memory session toggle, and optional ModMenu/YACL config options (`suppress_sleep_vignette`, `auto_hide_chat`).
 3. **🚫 Anti-Goals (Off-Limits / Do Not Touch)**:
-   - ❌ Do not document unreleased features from in-development or early-access builds; purge any unreleased claims.
+   - ❌ Do not document unreleased features from in-development or early-access builds (e.g. Cinematic Sleep HUD auto-fade from 1.2.0, F1 mode suppression from 1.1.1, rolling 26.x from 1.2.1); purge any unreleased claims.
    - ❌ Do not use corporate "we" voice in platform documentation; enforce the Solo Indie Voice ("I") invariant.
    - ❌ Do not modify Java source code or bump SemVer within this ticket.
 4. **✅ Definition of Done (Binary Verification Checklist)**:
-   - [ ] Modrinth description (`Doc/Platform Pages/Modrinth/description.md`) aligned with public version.
-   - [ ] CurseForge markdown (`Doc/Platform Pages/CurseForge/description.md`) aligned with public version.
-   - [ ] CurseForge semantic HTML (`Doc/Platform Pages/CurseForge/description.html`) updated with valid semantic tags.
-   - [ ] Zero unreleased or hallucinated mechanics claimed in storefronts.
+   - [x] Modrinth description (`Doc/Platform Pages/Modrinth/description.md`) aligned with public version.
+   - [x] CurseForge markdown (`Doc/Platform Pages/CurseForge/description.md`) aligned with public version.
+   - [x] CurseForge semantic HTML (`Doc/Platform Pages/CurseForge/description.html`) updated with valid semantic tags.
+   - [x] Zero unreleased or hallucinated mechanics claimed in storefronts.
+   - [x] Modrinth project description updated live via publisher API (`HTTP 204`).
+   - [x] External project links synchronized via publisher API.
 
 ---
 
@@ -36,13 +39,14 @@ Item 1.25 of the Studio Constitution (*Storefront Factual Accuracy & Anti-Halluc
 ## 🔬 3. Architectural Blueprint & Target Documentation Files
 
 - **Target Documentation Files**:
-- `Doc/Platform Pages/Modrinth/description.md`
-- `Doc/Platform Pages/CurseForge/description.md`
-- `Doc/Platform Pages/CurseForge/description.html`
+  - `Doc/Platform Pages/Modrinth/description.md`
+  - `Doc/Platform Pages/CurseForge/description.md`
+  - `Doc/Platform Pages/CurseForge/description.html`
+  - `ARCHITECTURE.md`
 - **Target Repository**: `Vanilla Outsider Collections/Bed Chat Hider`
 - **Live Public Releases**:
-  - Modrinth: `1.0.1+1.21.11`
-  - CurseForge: `1.0.6+26.3`
+  - Modrinth: `1.1.0+26.3` / `1.1.0+1.21.11` / `1.1.0+1.21.1` / `1.1.0+1.20.1`
+  - CurseForge: `1.1.0+26.3` / `1.1.0+1.21.11` / `1.1.0+1.21.1` / `1.1.0+1.20.1`
 
 ---
 
@@ -58,27 +62,27 @@ Item 1.25 of the Studio Constitution (*Storefront Factual Accuracy & Anti-Halluc
 
 ## 🛡️ 5. Edge Cases, Collisions & Failure Modes
 
-- **CurseForge HTML Compatibility**: Storefront HTML must use valid semantic tags (`<h3>`, `<p>`, `<ul>`, `<code>`) without prohibited JavaScript or invalid inline styles.
-- **Solo Indie Voice ("I" Voice)**: Ensure comms and descriptions use first-person singular ("I built this mod", "my mod"), never corporate "we".
-- **Zero Unreleased Mechanics**: Explicitly verify all listed GameRules, commands, and options exist in the published release jar.
+- **CurseForge HTML Compatibility**: Storefront HTML uses valid semantic tags (`<h3>`, `<p>`, `<ul>`, `<code>`, `<blockquote>`, `<table>`) without prohibited JavaScript or invalid raw iframes.
+- **Solo Indie Voice ("I" Voice)**: Comms and descriptions use first-person singular ("I built this mod", "my mod"), never corporate "we".
+- **Zero Unreleased Mechanics**: Verified that queued/in-development features (`enableCinematicSleepFade`, `cinematicFadeDelaySeconds`, `fadeCrosshairWhenSleeping` from 1.2.0+, and F1 mode suppression from 1.1.1+) are strictly excluded from published platform pages.
 
 ---
 
 ## 🚀 6. Implementation Steps (Execution Plan)
 
-1. Audit existing `Doc/Platform Pages` documents against the public release binaries (MR `1.0.1+1.21.11` / CF `1.0.6+26.3`).
-2. Purge any unreleased features, upcoming configuration options, or WIP commands.
-3. Update Modrinth markdown documentation to match verified public release mechanics.
-4. Update CurseForge markdown documentation and regenerate clean semantic CurseForge HTML.
-5. Verify first-person indie voice ("I") across all storefront copy.
-6. Verify clean synchronization with release hub and platform metadata.
+1. Audited existing `Doc/Platform Pages` documents against live public release binaries (1.1.0 across anchors).
+2. Purged corrupted control characters, conflicting dependency badges, and unreleased feature claims.
+3. Updated Modrinth markdown documentation to match verified public release mechanics (`description.md`).
+4. Updated CurseForge markdown documentation and regenerated clean semantic CurseForge HTML (`description.html`).
+5. Overhauled `ARCHITECTURE.md` with accurate entrypoints, mixin tables, and config parameters.
+6. Pushed live description update and link synchronization to Modrinth API via `platform_publisher.py`.
 
 ---
 
 ## 🏁 7. 5-Pillar Verification Checklist
 
-- [ ] **Pillar 1 (Source & Binary Parity)**: 100% of features claimed in platform descriptions exist in public release binaries.
-- [ ] **Pillar 2 (Zero-Hallucination Guard)**: Zero unreleased, early-access, or phantom mechanics remain across storefront docs.
-- [ ] **Pillar 3 (Brigadier AST Alignment)**: Documented command syntax matches the public release binary.
-- [ ] **Pillar 4 (GameTest & Config Parity)**: Documented GameRule keys and default values match the public release binary.
-- [ ] **Pillar 5 (Sidedness & Platform Hygiene)**: Solo indie voice ("I") verified across all documents; CurseForge HTML valid semantic markup.
+- [x] **Pillar 1 (Source & Binary Parity)**: 100% of features claimed in platform descriptions exist in public release binaries (1.1.0).
+- [x] **Pillar 2 (Zero-Hallucination Guard)**: Zero unreleased, early-access, or phantom mechanics remain across storefront docs (1.2.0 features excluded).
+- [x] **Pillar 3 (Brigadier AST Alignment)**: N/A - Client-only mod with 0 commands.
+- [x] **Pillar 4 (GameTest & Config Parity)**: Documented config keys (`suppress_sleep_vignette`, `auto_hide_chat`) and defaults match public release.
+- [x] **Pillar 5 (Sidedness & Platform Hygiene)**: Solo indie voice ("I") verified across all documents; CurseForge HTML valid semantic markup.
